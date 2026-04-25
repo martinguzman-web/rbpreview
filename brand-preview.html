@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roofboys — Brand Identity Preview · by Grwthly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Roofboys proposed palette */
+    --slate:    #14171C;
+    --graphite: #2A2F37;
+    --graphite-2: #1B1F25;
+    --bone:     #F2EEE5;
+    --ink:      #E7E3D8;
+    --ink-dim:  #8F969F;
+    --copper:   #C8521C;
+    --copper-deep: #9E3D11;
+    --mint:     #A3D5C2;
+    --line:     rgba(231, 227, 216, 0.08);
+    --line-strong: rgba(231, 227, 216, 0.14);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--slate); color: var(--ink); font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
+  .section { padding: 100px 0; border-top: 1px solid var(--line); }
+  .section:first-of-type { border-top: none; padding-top: 60px; }
+
+  /* Typography */
+  .display { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: -0.03em; line-height: 0.95; }
+  .editorial { font-family: 'Fraunces', serif; font-weight: 500; letter-spacing: -0.015em; line-height: 1.1; font-variation-settings: "opsz" 144; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-weight: 500; letter-spacing: -0.01em; }
+  .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--copper); margin-bottom: 16px; display: inline-block; }
+  .section-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 12px; }
+
+  h1.hero { font-size: 92px; font-weight: 700; letter-spacing: -0.035em; line-height: 0.92; margin-bottom: 28px; }
+  h1.hero .accent { color: var(--copper); }
+  h2.section-title { font-family: 'Fraunces', serif; font-weight: 500; font-size: 54px; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 18px; font-variation-settings: "opsz" 144; }
+  h3 { font-size: 22px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25; margin-bottom: 12px; }
+  p.lead { font-size: 20px; line-height: 1.55; color: var(--ink-dim); max-width: 760px; }
+  p.body { font-size: 16px; line-height: 1.65; color: var(--ink-dim); max-width: 640px; }
+  .rule { width: 48px; height: 2px; background: var(--copper); margin: 24px 0; }
+
+  /* Nav */
+  nav.top {
+    position: sticky; top: 0; z-index: 10; background: rgba(20,23,28,0.84); backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--line); padding: 18px 48px; display: flex; justify-content: space-between; align-items: center;
+  }
+  .logo-lockup { display: flex; align-items: center; gap: 12px; }
+  .logo-word { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: 0.01em; font-size: 16px; }
+  .logo-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--ink-dim); letter-spacing: 0.2em; text-transform: uppercase; border-left: 1px solid var(--line-strong); padding-left: 12px; }
+  nav .links { display: flex; gap: 28px; font-size: 13px; color: var(--ink-dim); font-weight: 500; }
+  nav .cta-nav { background: var(--copper); color: var(--bone); padding: 10px 18px; border-radius: 3px; font-size: 13px; font-weight: 600; }
+
+  /* Hero */
+  .hero-wrap { padding: 140px 0 100px; }
+  .hero-meta { display: flex; gap: 24px; margin-bottom: 28px; }
+  .hero-meta .chip { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-dim); padding: 6px 12px; border: 1px solid var(--line-strong); border-radius: 2px; }
+  .hero-meta .chip.live { color: var(--copper); border-color: rgba(200, 82, 28, 0.4); }
+
+  /* Palette */
+  .palette-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; margin-top: 48px; }
+  .swatch { display: flex; flex-direction: column; gap: 14px; }
+  .color { height: 140px; border-radius: 6px; border: 1px solid var(--line); }
+  .swatch .name { font-weight: 600; font-size: 14px; }
+  .swatch .hex { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-dim); }
+  .swatch .role { font-size: 12px; color: var(--ink-dim); line-height: 1.4; }
+
+  /* Typography grid */
+  .type-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 48px; }
+  .type-sample { display: flex; flex-direction: column; gap: 16px; }
+  .type-sample .tag { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-dim); letter-spacing: 0.15em; text-transform: uppercase; }
+  .type-sample .show { font-size: 56px; line-height: 1.0; }
+  .type-sample .show.serif { font-family: 'Fraunces', serif; font-weight: 500; font-variation-settings: "opsz" 144; }
+  .type-sample .show.sans { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: -0.03em; }
+  .type-sample .show.mono { font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 20px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .type-sample .spec { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink-dim); }
+
+  /* Logo concept */
+  .logo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 48px; }
+  .logo-card { background: var(--graphite-2); border: 1px solid var(--line); border-radius: 8px; padding: 80px 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; min-height: 280px; }
+  .logo-card.light { background: var(--bone); color: var(--slate); }
+  .logo-card .caption { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-dim); position: absolute; top: 16px; left: 20px; }
+  .logo-card { position: relative; }
+
+  .roofboys-mark { display: flex; align-items: center; gap: 14px; }
+  .roofboys-icon { width: 40px; height: 40px; position: relative; }
+  .roofboys-icon svg { width: 100%; height: 100%; }
+  .roofboys-word { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 32px; letter-spacing: -0.02em; }
+  .roofboys-dot { color: var(--copper); }
+
+  /* Before / After comparison */
+  .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 48px; }
+  .compare-card { background: var(--graphite-2); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .compare-header { padding: 16px 20px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; }
+  .compare-header .label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; }
+  .compare-header .before { color: var(--ink-dim); }
+  .compare-header .after { color: var(--copper); }
+  .compare-header .status { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--ink-dim); letter-spacing: 0.1em; }
+  .compare-body { aspect-ratio: 4/3; padding: 36px; display: flex; flex-direction: column; justify-content: center; }
+
+  /* BEFORE mock */
+  .before .compare-body { background: #000; color: #fff; }
+  .before .tag { background: #C03A1E; color: #fff; font-size: 10px; padding: 4px 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; display: inline-block; margin-bottom: 14px; width: fit-content; }
+  .before h4 { font-size: 32px; font-weight: 700; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.05; margin-bottom: 8px; }
+  .before h4 .r { color: #C03A1E; }
+  .before p { font-size: 13px; color: #999; line-height: 1.5; margin-bottom: 12px; }
+  .before .btn { background: #C03A1E; color: #fff; padding: 11px 18px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: inline-block; margin-top: 12px; width: fit-content; border-radius: 3px; }
+  .before .issues { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #777; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 12px; }
+
+  /* AFTER mock */
+  .after .compare-body { background: linear-gradient(180deg, var(--slate) 0%, #0E1115 100%); color: var(--ink); position: relative; }
+  .after .trust-bar { display: flex; gap: 12px; align-items: center; margin-bottom: 18px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--ink-dim); letter-spacing: 0.12em; text-transform: uppercase; }
+  .after .stars { color: #FFB74D; letter-spacing: 1px; font-size: 11px; }
+  .after h4 { font-family: 'Inter', sans-serif; font-size: 30px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.05; margin-bottom: 14px; color: var(--bone); }
+  .after h4 .accent { color: var(--copper); }
+  .after .sub { font-size: 13px; color: var(--ink-dim); line-height: 1.55; margin-bottom: 14px; max-width: 340px; }
+  .after .cta-row { display: flex; gap: 8px; }
+  .after .btn-p { background: var(--copper); color: var(--bone); padding: 11px 16px; font-size: 11px; font-weight: 600; border-radius: 3px; letter-spacing: 0.03em; }
+  .after .btn-s { background: transparent; color: var(--ink); padding: 11px 16px; font-size: 11px; font-weight: 500; border-radius: 3px; border: 1px solid var(--line-strong); }
+  .after .badges { display: flex; gap: 12px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line-strong); }
+  .after .badge { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--ink-dim); letter-spacing: 0.12em; text-transform: uppercase; }
+
+  /* Headline rewrites */
+  .rewrite-list { display: flex; flex-direction: column; gap: 28px; margin-top: 48px; }
+  .rewrite { display: grid; grid-template-columns: 1fr 60px 1fr; gap: 24px; align-items: center; padding: 24px; background: var(--graphite-2); border: 1px solid var(--line); border-radius: 8px; }
+  .rewrite .from, .rewrite .to { display: flex; flex-direction: column; gap: 8px; }
+  .rewrite .tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; }
+  .rewrite .from .tag { color: var(--ink-dim); }
+  .rewrite .to .tag { color: var(--copper); }
+  .rewrite .line { font-size: 18px; line-height: 1.35; font-weight: 500; }
+  .rewrite .from .line { color: var(--ink-dim); text-decoration: line-through; text-decoration-color: rgba(200, 82, 28, 0.4); }
+  .rewrite .to .line { color: var(--ink); font-weight: 600; }
+  .rewrite .arrow { font-family: 'JetBrains Mono', monospace; color: var(--copper); font-size: 20px; text-align: center; }
+
+  /* Trust stack visual */
+  .trust-stack { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 48px; }
+  .trust-tile { background: var(--graphite-2); border: 1px solid var(--line); border-radius: 6px; padding: 28px; display: flex; flex-direction: column; gap: 10px; }
+  .trust-tile .icon { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--copper); letter-spacing: 0.2em; text-transform: uppercase; }
+  .trust-tile h5 { font-size: 17px; font-weight: 600; }
+  .trust-tile p { font-size: 13px; color: var(--ink-dim); line-height: 1.55; }
+
+  /* Footer */
+  footer { padding: 64px 0 80px; border-top: 1px solid var(--line); color: var(--ink-dim); font-size: 13px; }
+  footer .row { display: flex; justify-content: space-between; align-items: end; gap: 40px; }
+  footer .logo-lockup { align-items: center; }
+  footer .meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; }
+
+  @media (max-width: 900px) {
+    h1.hero { font-size: 56px; }
+    h2.section-title { font-size: 36px; }
+    .palette-grid { grid-template-columns: repeat(2, 1fr); }
+    .type-grid, .logo-grid, .compare-grid, .trust-stack { grid-template-columns: 1fr; }
+    .rewrite { grid-template-columns: 1fr; }
+    .rewrite .arrow { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="logo-lockup">
+    <span class="logo-word">Roofboys</span>
+    <span class="logo-tag">Brand Identity · Preview</span>
+  </div>
+  <div class="links">
+    <a style="color:inherit;text-decoration:none">Palette</a>
+    <a style="color:inherit;text-decoration:none">Typography</a>
+    <a style="color:inherit;text-decoration:none">Messaging</a>
+    <a style="color:inherit;text-decoration:none">Before / After</a>
+  </div>
+  <div class="cta-nav">Approve &amp; Ship</div>
+</nav>
+
+<div class="wrap hero-wrap">
+  <div class="hero-meta">
+    <span class="chip live">Prepared by Grwthly</span>
+    <span class="chip">Roofboys Roofing &amp; Construction</span>
+    <span class="chip">DFW · April 2026</span>
+  </div>
+  <span class="eyebrow">Brand Identity Preview</span>
+  <h1 class="hero">The DFW roofer homeowners <span class="accent">pick when they don't want to gamble.</span></h1>
+  <p class="lead">A tightened positioning, a premium visual system, and a rewrite of every line on the site that still reads like stock roofer language. Not a rebrand — a sharpening. Built to make Roofboys feel like the operator it already is.</p>
+  <div class="rule"></div>
+  <p class="body">Proposed by Grwthly as part of the Location Growth Engine™ engagement. Every element below ties to a revenue leak identified in the Opportunity Brief.</p>
+</div>
+
+<!-- ============ THE THESIS ============ -->
+<div class="wrap section">
+  <span class="section-label">01 · Positioning Thesis</span>
+  <h2 class="section-title editorial">Stop sounding like every other DFW roofer.</h2>
+  <p class="lead">The current identity reads "Texas Roofers You Can Trust / Your Home Matters." Four hundred competitors say the same thing. The proposed position makes one operator-level promise and delivers it in visual language that feels more like a surgical specialist than a storm-chaser.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:56px;">
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:10px;">Before</div>
+      <div style="font-family:'Inter',sans-serif;font-size:22px;font-weight:500;line-height:1.35;color:var(--ink-dim);">"Texas Roofers You Can Trust. Your Home Matters."</div>
+      <div style="margin-top:16px;font-size:13px;color:var(--ink-dim);line-height:1.55;">Generic. Undifferentiated. Makes no promise. Matches every competitor.</div>
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--copper);margin-bottom:10px;">After</div>
+      <div style="font-family:'Inter',sans-serif;font-size:22px;font-weight:600;line-height:1.35;color:var(--ink);">"22-minute inspection. Same-day quote. In-house crews that don't subcontract — or we pay you $100."</div>
+      <div style="margin-top:16px;font-size:13px;color:var(--ink-dim);line-height:1.55;">Specific. Measurable. Risk-reversed. The wedge that already exists, finally said out loud.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PALETTE ============ -->
+<div class="wrap section">
+  <span class="section-label">02 · Proposed Palette</span>
+  <h2 class="section-title editorial">Copper over red.</h2>
+  <p class="lead">Every competitor in DFW roofing paints their brand bright-red. It signals alarm, not craft. The proposed palette leads with slate and copper — weathered metal tones that signal expertise and premium work. Bright color is reserved for a single accent, used once per screen.</p>
+
+  <div class="palette-grid">
+    <div class="swatch">
+      <div class="color" style="background:#14171C;"></div>
+      <div>
+        <div class="name">Slate</div>
+        <div class="hex">#14171C</div>
+        <div class="role">Primary surface. Replaces bright red as the dominant color.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="color" style="background:#2A2F37;"></div>
+      <div>
+        <div class="name">Graphite</div>
+        <div class="hex">#2A2F37</div>
+        <div class="role">Secondary surface. Cards, sections.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="color" style="background:#C8521C;"></div>
+      <div>
+        <div class="name">Copper</div>
+        <div class="hex">#C8521C</div>
+        <div class="role">Accent. One use per screen. CTAs, key numbers.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="color" style="background:#F2EEE5;"></div>
+      <div>
+        <div class="name" style="color:var(--ink);">Bone</div>
+        <div class="hex">#F2EEE5</div>
+        <div class="role">Light surface. Long-form content, docs.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="color" style="background:#8F969F;"></div>
+      <div>
+        <div class="name">Pewter</div>
+        <div class="hex">#8F969F</div>
+        <div class="role">Metadata, captions, secondary text on dark.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="color" style="background:#A3D5C2;"></div>
+      <div>
+        <div class="name">Signal Mint</div>
+        <div class="hex">#A3D5C2</div>
+        <div class="role">Live data only. Review scores, storm status, live chat.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TYPOGRAPHY ============ -->
+<div class="wrap section">
+  <span class="section-label">03 · Typography</span>
+  <h2 class="section-title editorial">Three voices, one system.</h2>
+  <p class="lead">The current site uses a single sans-serif doing every job. The proposed system uses three distinct typefaces — each pulled in for the role it does best. No fourth font. No exceptions.</p>
+
+  <div class="type-grid">
+    <div class="type-sample">
+      <span class="tag">Display · Inter 700</span>
+      <div class="show sans">Same-day quote.</div>
+      <div class="spec">Operator headlines, hero, section titles. Tight tracking.</div>
+    </div>
+    <div class="type-sample">
+      <span class="tag">Editorial · Fraunces 500</span>
+      <div class="show serif">Craft you can feel.</div>
+      <div class="spec">Long-form, content marketing, sub-heads. Warm, premium.</div>
+    </div>
+    <div class="type-sample" style="grid-column:1 / -1;">
+      <span class="tag">Utility · JetBrains Mono 500</span>
+      <div class="show mono">REVENUE · AT · RISK &nbsp;·&nbsp; LEAK 01 &nbsp;·&nbsp; $40K / MO</div>
+      <div class="spec">Labels, eyebrows, metadata, operator-stack language. Always uppercase, always spaced.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LOGO — KEEP AS-IS ============ -->
+<div class="wrap section">
+  <span class="section-label">04 · Logo</span>
+  <h2 class="section-title editorial">Keep the logo. Change the system around it.</h2>
+  <p class="lead">The existing Roofboys logo stays. It already carries equity with past customers, crews, and the DFW market. What changes is the environment the logo lives in — the palette, typography, spacing, and tagline lockup that surround it.</p>
+
+  <div class="logo-grid">
+    <div class="logo-card">
+      <span class="caption">Existing Logo · On Slate</span>
+      <div class="roofboys-mark">
+        <div class="roofboys-word" style="color:var(--ink);font-size:44px;">Roofboys</div>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-dim);margin-top:8px;">DFW · In-House Crews · Since 2011</div>
+    </div>
+    <div class="logo-card light">
+      <span class="caption" style="color:var(--graphite);">Existing Logo · On Bone</span>
+      <div class="roofboys-mark">
+        <div class="roofboys-word" style="color:var(--slate);font-size:44px;">Roofboys</div>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--graphite);margin-top:8px;">DFW · In-House Crews · Since 2011</div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;padding:24px 28px;background:var(--graphite-2);border-left:3px solid var(--copper);border-radius:4px;">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--copper);margin-bottom:10px;">What we recommend</div>
+    <p style="font-size:15px;color:var(--ink);line-height:1.6;margin:0;">Keep the current Roofboys logo as the master mark. Standardize a tagline lockup below it — <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-dim);">DFW · In-House Crews · Since 2011</span> — to use across site, email, jobsite signage, and crew apparel. No redraw, no redesign. Just a consistent supporting system.</p>
+  </div>
+</div>
+
+<!-- ============ BEFORE / AFTER SITE HERO ============ -->
+<div class="wrap section">
+  <span class="section-label">05 · Website Hero · Before vs. After</span>
+  <h2 class="section-title editorial">The first 30 seconds, rebuilt.</h2>
+  <p class="lead">Every homeowner who hits the site is looking for the same four things: safety, specificity, speed, and social proof. The current hero gives them none. The proposed hero gives them all four, above the fold, in one glance.</p>
+
+  <div class="compare-grid">
+    <div class="compare-card before">
+      <div class="compare-header">
+        <span class="label before">Before · Current site</span>
+        <span class="status">roofboysrestores.com</span>
+      </div>
+      <div class="compare-body">
+        <span class="tag">Free Inspection</span>
+        <h4>Texas <span class="r">Roofers</span> You Can Trust</h4>
+        <p>Your home matters. Get a free inspection from Texas roofers you can trust.</p>
+        <div class="btn">Start Your Free Inspection</div>
+        <div class="issues">
+          ✗ No reviews  &nbsp;·&nbsp; ✗ No badges  &nbsp;·&nbsp; ✗ Generic headline  &nbsp;·&nbsp; ✗ Typo in nav
+        </div>
+      </div>
+    </div>
+    <div class="compare-card after">
+      <div class="compare-header">
+        <span class="label after">After · Proposed</span>
+        <span class="status">Roofboys · v2</span>
+      </div>
+      <div class="compare-body">
+        <div class="trust-bar">
+          <span class="stars">★★★★★</span>
+          <span>4.9 · 217 GOOGLE REVIEWS</span>
+          <span>· GAF MASTER ELITE</span>
+        </div>
+        <h4>22-minute inspection. <span class="accent">Same-day quote.</span> No subcontractors — or we pay you $100.</h4>
+        <p class="sub">The DFW roofer for homeowners who don't want to gamble. In-house crews, 2,000+ roofs, lifetime workmanship.</p>
+        <div class="cta-row">
+          <span class="btn-p">Book My Inspection</span>
+          <span class="btn-s">Call 972-595-2411</span>
+        </div>
+        <div class="badges">
+          <span class="badge">GAF MASTER ELITE</span>
+          <span class="badge">OWENS CORNING</span>
+          <span class="badge">BBB A+</span>
+          <span class="badge">LICENSED &amp; INSURED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MESSAGING REWRITES ============ -->
+<div class="wrap section">
+  <span class="section-label">06 · Headline Rewrites</span>
+  <h2 class="section-title editorial">Every line, sharper.</h2>
+  <p class="lead">Six headlines currently on the site, rewritten to match the proposed voice. Each "After" is specific, operator-level, and tied to a concrete promise.</p>
+
+  <div class="rewrite-list">
+    <div class="rewrite">
+      <div class="from">
+        <span class="tag">Hero · Before</span>
+        <span class="line">Texas Roofers You Can Trust</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="to">
+        <span class="tag">Hero · After</span>
+        <span class="line">22-minute inspection. Same-day quote. In-house crews — or we pay you $100.</span>
+      </div>
+    </div>
+    <div class="rewrite">
+      <div class="from">
+        <span class="tag">Services · Before</span>
+        <span class="line">Residential · Learn More</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="to">
+        <span class="tag">Services · After</span>
+        <span class="line">Residential roof replacement — one day, one crew, one price.</span>
+      </div>
+    </div>
+    <div class="rewrite">
+      <div class="from">
+        <span class="tag">Proof · Before</span>
+        <span class="line">15+ Years of Experience</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="to">
+        <span class="tag">Proof · After</span>
+        <span class="line">2,047 DFW roofs. 217 five-star Google reviews. Zero subcontractors — ever.</span>
+      </div>
+    </div>
+    <div class="rewrite">
+      <div class="from">
+        <span class="tag">Emergency · Before</span>
+        <span class="line">Weekends: On Call</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="to">
+        <span class="tag">Emergency · After</span>
+        <span class="line">Storm hit? We reply in 60 seconds, 24/7. Inspection booked before the rain stops.</span>
+      </div>
+    </div>
+    <div class="rewrite">
+      <div class="from">
+        <span class="tag">Process · Before</span>
+        <span class="line">We Offer Free Estimates</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="to">
+        <span class="tag">Process · After</span>
+        <span class="line">You'll have a full quote in your inbox the same day — with material specs, timeline, and warranty.</span>
+      </div>
+    </div>
+    <div class="rewrite">
+      <div class="from">
+        <span class="tag">CTA · Before</span>
+        <span class="line">Fill out a Free Estimate today</span>
+      </div>
+      <div class="arrow">→</div>
+      <div class="to">
+        <span class="tag">CTA · After</span>
+        <span class="line">Book your 22-minute inspection. Next slot: Thursday 2pm in Frisco.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TRUST STACK ============ -->
+<div class="wrap section">
+  <span class="section-label">07 · Trust Stack</span>
+  <h2 class="section-title editorial">What belongs above the fold.</h2>
+  <p class="lead">Nine elements every homepage must surface inside the first screen. Roofboys currently has zero of these visible. The proposed system hard-wires all nine into the hero and proof bar.</p>
+
+  <div class="trust-stack">
+    <div class="trust-tile">
+      <span class="icon">01</span>
+      <h5>Live Google review score</h5>
+      <p>Star count, review total, pulled live from GBP. Renders in real time.</p>
+    </div>
+    <div class="trust-tile">
+      <span class="icon">02</span>
+      <h5>Manufacturer certifications</h5>
+      <p>GAF Master Elite, Owens Corning Platinum, CertainTeed SELECT — visible as logo row.</p>
+    </div>
+    <div class="trust-tile">
+      <span class="icon">03</span>
+      <h5>License &amp; insurance proof</h5>
+      <p>Texas license number, COI on request, BBB A+ — one line in hero.</p>
+    </div>
+    <div class="trust-tile">
+      <span class="icon">04</span>
+      <h5>Workmanship warranty</h5>
+      <p>Lifetime — named as a promise, not a disclaimer.</p>
+    </div>
+    <div class="trust-tile">
+      <span class="icon">05</span>
+      <h5>The $100 guarantee</h5>
+      <p>"22-min inspection, same-day quote, no subs — or we pay you $100." Anchors the hero.</p>
+    </div>
+    <div class="trust-tile">
+      <span class="icon">06</span>
+      <h5>Owner face + signature</h5>
+      <p>Photo of the owner with a one-line personal promise. Humanizes a $25K purchase.</p>
+    </div>
+    <div class="trust-tile">
+      <span class="icon">07</span>
+      <h5>60-second process video</h5>
+      <p>What a Roofboys install looks like. Filmed once, runs forever.</p>
+    </div>
+    <div class="trust-tile">
+      <span class="icon">08</span>
+      <h5>Recent-jobs ticker</h5>
+      <p>"Installed this week: Plano, Frisco, Rockwall, Allen." Updates live from the CRM.</p>
+    </div>
+    <div class="trust-tile">
+      <span class="icon">09</span>
+      <h5>"Next inspection slot"</h5>
+      <p>"Thursday 2pm, Frisco." Creates urgency and proves the operation is real.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div class="logo-lockup">
+        <span class="logo-word">Roofboys</span>
+        <span class="logo-tag">Brand Preview · v1</span>
+      </div>
+      <div class="meta">Prepared by Grwthly — AI Growth Operator &nbsp; · &nbsp; April 2026</div>
+    </div>
+    <div style="margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-dim);letter-spacing:0.1em;">
+      This preview is directional. Final visual execution ships as part of the Location Growth Engine™ build — website, print collateral, crew apparel, jobsite signage, and vehicle wraps.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

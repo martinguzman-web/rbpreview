@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="robots" content="noindex, nofollow">
+<title>Roofboys — Ad Creative Pack · April 2026</title>
+<meta name="viewport" content="width=1440" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&family=Roboto:wght@400;500&family=Arial&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --obsidian:#14171C;
+    --obsidian-2:#0A0A0B;
+    --graphite:#2A2F37;
+    --graphite-2:#1A1D22;
+    --bone:#F5F2EC;
+    --bone-2:#EDE9E0;
+    --ink:#E8E6E1;
+    --ink-dim:#8A8A8F;
+    --ink-mute:#56565B;
+    --copper:#E8442C;
+    --copper-light:#FF6F4C;
+    --copper-deep:#B92E1A;
+    --pulse:#7DF9C5;
+    --line:rgba(232,230,225,0.08);
+    --line-2:rgba(232,230,225,0.14);
+    --font-display:'Inter',system-ui,sans-serif;
+    --font-editorial:'Fraunces',Georgia,serif;
+    --font-mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--obsidian);color:var(--ink);font-family:var(--font-display);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+  body{font-size:15px;line-height:1.55;min-height:100vh}
+  img{display:block;max-width:100%}
+
+  /* ---------- Page scaffold ---------- */
+  .page{max-width:1400px;margin:0 auto;padding:72px 64px 120px}
+  .page-header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid var(--line-2);padding-bottom:32px;margin-bottom:80px}
+  .eyebrow{font-family:var(--font-mono);font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--copper)}
+  .eyebrow.dim{color:var(--ink-dim)}
+  .page-title{font-family:var(--font-display);font-weight:700;font-size:34px;letter-spacing:-0.02em;line-height:1.05;margin-top:14px}
+  .page-title em{font-family:var(--font-editorial);font-style:italic;font-weight:500;color:var(--ink-dim);font-size:26px;letter-spacing:-0.01em;display:block;margin-top:8px}
+  .page-meta{text-align:right;font-family:var(--font-mono);font-size:11px;color:var(--ink-dim);letter-spacing:0.15em;text-transform:uppercase;line-height:1.8}
+  .page-meta .rule{display:inline-block;width:24px;height:1px;background:var(--copper);vertical-align:middle;margin:0 10px 4px}
+
+  /* ---------- Asset section ---------- */
+  .asset{margin-bottom:128px}
+  .asset-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;gap:48px}
+  .asset-head .label{font-family:var(--font-mono);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-dim)}
+  .asset-head .label strong{color:var(--copper);font-weight:500;margin-right:12px}
+  .asset-head h2{font-family:var(--font-display);font-weight:700;font-size:28px;letter-spacing:-0.02em;line-height:1.15;margin-top:10px;max-width:620px}
+  .asset-head .caption{max-width:420px;color:var(--ink-dim);font-size:14px;line-height:1.6;font-family:var(--font-display)}
+  .asset-head .caption em{font-family:var(--font-editorial);font-style:italic;color:var(--ink)}
+  .asset-stage{background:var(--graphite-2);border:1px solid var(--line);border-radius:14px;padding:80px 48px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .asset-stage::before{content:"";position:absolute;inset:0;background:radial-gradient(1200px 400px at 50% -10%,rgba(232,230,225,0.04),transparent 70%);pointer-events:none}
+  .stage-grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:48px 48px;opacity:0.35;pointer-events:none;mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%)}
+  .stage-tag{position:absolute;top:20px;left:24px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-mute)}
+  .stage-tag .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--pulse);margin-right:8px;vertical-align:middle;box-shadow:0 0 8px rgba(125,249,197,0.6)}
+  .stage-dim{position:absolute;top:20px;right:24px;font-family:var(--font-mono);font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-mute)}
+
+  /* ---------- ROOFBOYS wordmark ---------- */
+  .rb-wordmark{font-family:var(--font-display);font-weight:900;letter-spacing:0.04em;line-height:1}
+  .rb-wordmark .dot{color:var(--copper)}
+
+  /* ---------- PHONE FRAME (iPhone-style) ---------- */
+  .phone{position:relative;width:340px;height:700px;border-radius:50px;background:#0A0A0B;padding:10px;box-shadow:0 40px 80px rgba(0,0,0,0.55),0 0 0 2px #2b2d33,0 0 0 3px #0e1013,inset 0 0 0 1px rgba(255,255,255,0.04);z-index:2}
+  .phone-screen{position:relative;width:100%;height:100%;border-radius:42px;overflow:hidden;background:#000}
+  .phone-notch{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:110px;height:30px;background:#000;border-radius:18px;z-index:10}
+  .phone-notch::after{content:"";position:absolute;top:10px;right:20px;width:10px;height:10px;border-radius:50%;background:#121418;box-shadow:inset 0 0 0 1px rgba(255,255,255,0.05)}
+  .phone-statusbar{position:relative;z-index:9;display:flex;justify-content:space-between;align-items:center;padding:16px 28px 0;color:#fff;font-family:-apple-system,'SF Pro Text','Inter',sans-serif;font-size:15px;font-weight:600;letter-spacing:-0.01em;height:52px}
+  .phone-statusbar.dark{color:#0A0A0B}
+  .sb-icons{display:flex;gap:6px;align-items:center}
+  .sb-icon-signal{display:inline-block;width:17px;height:11px;background:currentColor;-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 11'><rect x='0' y='8' width='3' height='3' rx='0.5'/><rect x='4.5' y='6' width='3' height='5' rx='0.5'/><rect x='9' y='3' width='3' height='8' rx='0.5'/><rect x='13.5' y='0' width='3' height='11' rx='0.5'/></svg>") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 11'><rect x='0' y='8' width='3' height='3' rx='0.5'/><rect x='4.5' y='6' width='3' height='5' rx='0.5'/><rect x='9' y='3' width='3' height='8' rx='0.5'/><rect x='13.5' y='0' width='3' height='11' rx='0.5'/></svg>") center/contain no-repeat}
+  .sb-icon-wifi{display:inline-block;width:16px;height:12px;background:currentColor;-webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'><path d='M8 11.5a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4zm0-4.6c1.5 0 2.9.55 4 1.55l1.3-1.3A7.7 7.7 0 008 4.9a7.7 7.7 0 00-5.3 2.25L4 8.45A5.86 5.86 0 018 6.9zm0-4.6c2.75 0 5.3 1.05 7.2 2.95L16.5 4A9.9 9.9 0 008 0 9.9 9.9 0 00-.5 4L.8 5.25A10.15 10.15 0 018 2.3z'/></svg>") center/contain no-repeat;mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'><path d='M8 11.5a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4zm0-4.6c1.5 0 2.9.55 4 1.55l1.3-1.3A7.7 7.7 0 008 4.9a7.7 7.7 0 00-5.3 2.25L4 8.45A5.86 5.86 0 018 6.9zm0-4.6c2.75 0 5.3 1.05 7.2 2.95L16.5 4A9.9 9.9 0 008 0 9.9 9.9 0 00-.5 4L.8 5.25A10.15 10.15 0 018 2.3z'/></svg>") center/contain no-repeat}
+  .sb-battery{width:26px;height:12px;border:1px solid currentColor;border-radius:3px;position:relative;opacity:0.9}
+  .sb-battery::after{content:"";position:absolute;right:-3px;top:3px;width:2px;height:6px;background:currentColor;border-radius:0 1px 1px 0}
+  .sb-battery::before{content:"";position:absolute;left:1px;top:1px;bottom:1px;width:calc(100% - 10px);background:currentColor;border-radius:1px}
+
+  /* ---------- ASSET 01 — META 9:16 STORM ---------- */
+  .ad-meta-story{position:absolute;inset:52px 0 0;color:#fff;display:flex;flex-direction:column}
+  .ig-chrome{padding:6px 14px 10px;display:flex;align-items:center;gap:10px;font-family:-apple-system,'SF Pro Text','Inter',sans-serif}
+  .ig-avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#14171C,#2A2F37);display:grid;place-items:center;font-family:var(--font-display);font-weight:900;font-size:11px;letter-spacing:0.02em;color:#fff;box-shadow:0 0 0 2px #000,0 0 0 3.5px #E8442C}
+  .ig-handle{font-size:13px;font-weight:600;color:#fff}
+  .ig-sponsored{font-size:11px;color:rgba(255,255,255,0.72);font-weight:400;margin-top:1px}
+  .ig-more{margin-left:auto;letter-spacing:2px;font-weight:700;color:#fff;font-size:14px}
+  .story-hero{position:relative;flex:1;background:radial-gradient(ellipse at 70% 20%,#2A2F37 0%,#14171C 40%,#05070A 100%);overflow:hidden}
+  .story-hero::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(80% 40% at 50% 0%,rgba(232,68,44,0.08),transparent 70%),
+    radial-gradient(60% 30% at 20% 80%,rgba(125,249,197,0.04),transparent 70%);}
+  .cloud{position:absolute;background:radial-gradient(ellipse,rgba(42,47,55,0.95),rgba(20,23,28,0) 70%);filter:blur(8px)}
+  .cloud.c1{top:-40px;left:-60px;width:340px;height:180px}
+  .cloud.c2{top:40px;right:-80px;width:300px;height:160px;background:radial-gradient(ellipse,rgba(58,64,74,0.8),rgba(20,23,28,0) 70%)}
+  .cloud.c3{top:180px;left:-40px;width:260px;height:120px;background:radial-gradient(ellipse,rgba(30,34,40,0.9),rgba(20,23,28,0) 70%)}
+  .lightning{position:absolute;top:40px;right:60px;width:80px;height:220px;opacity:0.85;filter:drop-shadow(0 0 12px rgba(255,255,255,0.4))}
+  .rain{position:absolute;inset:0;background-image:
+    linear-gradient(100deg,rgba(255,255,255,0.06) 1px,transparent 1px),
+    linear-gradient(100deg,rgba(255,255,255,0.04) 1px,transparent 1px);
+    background-size:22px 80px,14px 60px;mix-blend-mode:screen;opacity:0.7}
+  .skyline{position:absolute;bottom:0;left:0;right:0;height:120px;background:linear-gradient(180deg,transparent,#05070A 60%);display:flex;align-items:flex-end}
+  .skyline svg{width:100%;height:120px}
+
+  .story-content{position:relative;padding:28px 24px 22px;display:flex;flex-direction:column;gap:14px}
+  .story-wordmark{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+  .story-wordmark .rb{font-size:18px}
+  .story-wordmark .license{font-family:var(--font-mono);font-size:9px;letter-spacing:0.18em;color:rgba(255,255,255,0.55);text-transform:uppercase}
+  .story-eyebrow{font-family:var(--font-mono);font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:var(--copper-light);display:inline-flex;align-items:center;gap:8px}
+  .story-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--copper-light);box-shadow:0 0 10px var(--copper-light);animation:pulse 1.4s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:0.4}}
+  .story-headline{font-family:var(--font-display);font-weight:800;font-size:34px;line-height:1.02;letter-spacing:-0.03em;color:#fff;text-wrap:pretty}
+  .story-sub{font-family:var(--font-display);font-weight:400;font-size:13.5px;line-height:1.5;color:rgba(255,255,255,0.78);max-width:260px}
+  .story-sub strong{color:#fff;font-weight:600}
+
+  .story-cta{display:flex;align-items:center;justify-content:space-between;background:var(--copper);color:#fff;padding:14px 18px;border-radius:6px;font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:-0.01em;margin-top:4px}
+  .story-cta .arrow{font-family:var(--font-mono);font-weight:500}
+
+  .story-trust{display:flex;align-items:center;gap:10px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.10);font-family:var(--font-mono);font-size:9.5px;letter-spacing:0.1em;color:rgba(255,255,255,0.75);text-transform:uppercase;flex-wrap:wrap}
+  .story-trust .stars{color:#FFC93C;letter-spacing:1px}
+  .story-trust .sep{opacity:0.3}
+
+  .ig-actions{position:absolute;right:14px;bottom:140px;display:flex;flex-direction:column;gap:18px;z-index:5}
+  .ig-action{width:30px;height:30px;color:#fff;opacity:0.85}
+
+  /* ---------- ASSET 02 — META 1:1 SQUARE ---------- */
+  .square-wrap{width:560px;height:560px;background:var(--bone);border-radius:4px;position:relative;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,0.4),0 0 0 1px rgba(0,0,0,0.06)}
+  .square-wrap::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(700px 300px at 90% -10%,rgba(232,68,44,0.06),transparent 60%),
+    radial-gradient(500px 300px at 0% 100%,rgba(20,23,28,0.04),transparent 60%);pointer-events:none}
+  .square-inner{position:relative;padding:40px 44px 36px;height:100%;display:flex;flex-direction:column;color:var(--obsidian)}
+  .square-top{display:flex;align-items:center;justify-content:space-between}
+  .square-top .rb{font-size:20px;color:var(--obsidian)}
+  .square-top .rb .dot{color:var(--copper)}
+  .square-top .meta{font-family:var(--font-mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-mute)}
+  .square-eyebrow{font-family:var(--font-mono);font-size:11px;letter-spacing:0.24em;text-transform:uppercase;color:var(--copper);margin-top:36px;display:flex;align-items:center;gap:12px}
+  .square-eyebrow::before{content:"";display:block;width:28px;height:1px;background:var(--copper)}
+  .square-headline{font-family:var(--font-display);font-weight:800;font-size:36px;line-height:1.04;letter-spacing:-0.03em;color:var(--obsidian);margin-top:16px;text-wrap:pretty}
+  .square-headline .copper{color:var(--copper)}
+  .square-headline .serif{font-family:var(--font-editorial);font-style:italic;font-weight:500;letter-spacing:-0.02em}
+  .square-sub{font-family:var(--font-display);font-size:13.5px;line-height:1.5;color:var(--ink-mute);margin-top:14px;max-width:420px}
+  .square-chips{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}
+  .chip{background:transparent;border:1px solid rgba(10,10,11,0.16);padding:8px 12px;border-radius:4px;font-family:var(--font-mono);font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--obsidian);display:inline-flex;align-items:center;gap:8px}
+  .chip .n{color:var(--copper);font-weight:600}
+  .square-footer{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;border-top:1px solid rgba(10,10,11,0.1)}
+  .square-cta{background:var(--copper);color:#fff;padding:13px 22px;border-radius:4px;font-family:var(--font-display);font-weight:700;font-size:13.5px;letter-spacing:-0.005em;display:inline-flex;align-items:center;gap:12px}
+  .square-cta .arrow{font-family:var(--font-mono);font-weight:500}
+  .square-service{font-family:var(--font-mono);font-size:9.5px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-mute);text-align:right;line-height:1.6;max-width:240px}
+  .square-service strong{color:var(--obsidian);font-weight:500}
+
+  /* ---------- ASSET 03 — GOOGLE SERP ---------- */
+  .serp-wrap{width:720px;background:#fff;border-radius:10px;padding:40px 44px 44px;font-family:Arial,'Roboto',sans-serif;color:#202124;box-shadow:0 30px 80px rgba(0,0,0,0.4),0 0 0 1px rgba(0,0,0,0.06)}
+  .serp-searchbar{display:flex;align-items:center;gap:12px;padding:10px 14px;border:1px solid #dfe1e5;border-radius:24px;margin-bottom:28px;box-shadow:0 1px 3px rgba(0,0,0,0.06)}
+  .serp-searchbar svg{width:18px;height:18px;color:#9aa0a6}
+  .serp-searchbar input{border:none;outline:none;flex:1;font-family:Arial,sans-serif;font-size:15px;color:#202124;background:transparent;pointer-events:none}
+  .serp-searchbar .mic{width:22px;height:22px;color:#4285f4}
+  .serp-tabs{display:flex;gap:24px;border-bottom:1px solid #ebebeb;padding-bottom:0;margin-bottom:22px;font-size:13px;color:#5f6368}
+  .serp-tab{padding:10px 0;cursor:default}
+  .serp-tab.active{color:#1a73e8;border-bottom:3px solid #1a73e8;font-weight:500}
+  .serp-stats{font-size:12px;color:#70757a;margin-bottom:22px}
+
+  .serp-ad{}
+  .serp-ad-top{display:flex;align-items:center;gap:8px;font-size:12px;color:#202124;margin-bottom:4px}
+  .serp-ad-label{font-weight:700;color:#202124;font-size:13px}
+  .serp-ad-rating{display:inline-flex;align-items:center;gap:4px;color:#5f6368;font-size:12px;padding:2px 8px;border:1px solid #e8eaed;border-radius:12px;margin-left:4px}
+  .serp-ad-rating .stars{color:#fbbc04;letter-spacing:-1px}
+  .serp-url{font-size:14px;color:#202124;display:flex;align-items:center;gap:8px;margin-bottom:2px}
+  .serp-favicon{width:26px;height:26px;border-radius:50%;background:#14171C;display:grid;place-items:center;color:#fff;font-family:var(--font-display);font-weight:900;font-size:10px;letter-spacing:0.02em}
+  .serp-url-path{color:#202124;font-size:14px}
+  .serp-url-path .sub{color:#5f6368}
+  .serp-title{color:#1a0dab;font-size:20px;line-height:1.3;margin:2px 0 4px;font-weight:400;font-family:Arial,'Roboto',sans-serif;letter-spacing:-0.005em;cursor:pointer}
+  .serp-title:hover{text-decoration:underline}
+  .serp-desc{color:#4d5156;font-size:14px;line-height:1.58;max-width:620px}
+  .serp-desc .b{font-weight:700}
+  .serp-sitelinks{display:grid;grid-template-columns:1fr 1fr;gap:4px 40px;margin-top:14px;padding-top:14px;border-top:1px solid #f1f3f4}
+  .serp-sitelink{padding:4px 0}
+  .serp-sitelink a{color:#1a0dab;font-size:14px;text-decoration:none}
+  .serp-sitelink a:hover{text-decoration:underline}
+  .serp-sitelink .d{color:#4d5156;font-size:12px;margin-top:1px}
+  .serp-phone-row{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap}
+  .serp-phone-chip{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border:1px solid #dadce0;border-radius:18px;font-size:13px;color:#1a73e8;background:#fff}
+  .serp-phone-chip svg{width:14px;height:14px}
+  .serp-phone-chip.call{background:#e8f0fe;border-color:#e8f0fe}
+
+  /* second "organic" for realism */
+  .serp-organic{margin-top:28px;padding-top:20px;border-top:1px solid #f1f3f4;opacity:0.55}
+  .serp-organic .serp-title{font-size:18px}
+
+  /* ---------- ASSET 04 — DISPLAY BANNER ---------- */
+  .banner-frame{position:relative}
+  .banner-label{position:absolute;top:-26px;left:0;font-family:var(--font-mono);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-mute)}
+  .banner-label strong{color:var(--ink-dim);font-weight:500;margin-right:12px}
+  /* Render at 2x scale: 728x90 → ~1092x135 */
+  .banner{width:1092px;height:135px;background:var(--obsidian-2);border-radius:6px;display:flex;align-items:stretch;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.06)}
+  .banner::before{content:"";position:absolute;inset:0;background:
+    radial-gradient(500px 200px at 0% 50%,rgba(232,68,44,0.10),transparent 70%),
+    linear-gradient(90deg,transparent,rgba(232,230,225,0.03));pointer-events:none}
+  .banner-left{padding:24px 30px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid rgba(255,255,255,0.07);min-width:240px;z-index:1}
+  .banner-left .rb{font-size:22px;color:#fff}
+  .banner-license{font-family:var(--font-mono);font-size:9.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-mute);margin-top:10px}
+  .banner-license strong{color:var(--ink-dim);font-weight:500}
+  .banner-mid{flex:1;padding:24px 36px;display:flex;flex-direction:column;justify-content:center;gap:8px;z-index:1}
+  .banner-eyebrow{font-family:var(--font-mono);font-size:10px;letter-spacing:0.24em;text-transform:uppercase;color:var(--copper);display:inline-flex;align-items:center;gap:10px}
+  .banner-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--copper);box-shadow:0 0 8px var(--copper)}
+  .banner-hl{font-family:var(--font-display);font-weight:700;font-size:26px;letter-spacing:-0.025em;line-height:1.1;color:#fff}
+  .banner-hl em{font-family:var(--font-editorial);font-style:italic;font-weight:500;color:var(--ink-dim)}
+  .banner-right{padding:24px 30px;display:flex;align-items:center;gap:16px;z-index:1}
+  .banner-cta{background:var(--copper);color:#fff;padding:18px 26px;border-radius:4px;font-family:var(--font-display);font-weight:700;font-size:18px;letter-spacing:-0.01em;white-space:nowrap;display:inline-flex;align-items:center;gap:10px}
+  .banner-cta svg{width:16px;height:16px}
+
+  /* decorative lines in banner */
+  .banner-bars{position:absolute;top:0;bottom:0;left:55%;width:280px;pointer-events:none;display:flex;align-items:center;gap:4px;opacity:0.3}
+  .banner-bars span{width:2px;background:var(--ink-dim)}
+  .banner-bars span:nth-child(1){height:20%}
+  .banner-bars span:nth-child(2){height:45%}
+  .banner-bars span:nth-child(3){height:32%}
+  .banner-bars span:nth-child(4){height:70%}
+  .banner-bars span:nth-child(5){height:55%;background:var(--copper)}
+  .banner-bars span:nth-child(6){height:40%}
+  .banner-bars span:nth-child(7){height:25%}
+
+  /* ---------- footer ---------- */
+  .page-foot{margin-top:40px;padding-top:32px;border-top:1px solid var(--line-2);display:flex;justify-content:space-between;align-items:center;font-family:var(--font-mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-mute)}
+  .page-foot strong{color:var(--ink-dim);font-weight:500}
+
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">Prepared by Grwthly</div>
+      <h1 class="page-title">Roofboys — Ad Creative Pack<em>Engineered demand for every storm, every neighborhood.</em></h1>
+    </div>
+    <div class="page-meta">
+      DFW · April 2026
+      <br>Ref<span class="rule"></span>AP-RB-2604
+      <br>4 of 4 assets
+    </div>
+  </header>
+
+  <!-- ASSET 01 — META 9:16 STORY -->
+  <section class="asset">
+    <div class="asset-head">
+      <div>
+        <div class="label"><strong>01</strong>Meta · Instagram Story · 9:16 · Storm trigger</div>
+        <h2>Hyper-local storm creative, geo-fenced to DFW ZIP codes within 6 hours of a hail event.</h2>
+      </div>
+      <p class="caption">Fires inside the <em>cognitive window</em> between damage and the first agency knock. The 22-minute promise is the proof of system; the CTA is one tap from booked.</p>
+    </div>
+    <div class="asset-stage">
+      <div class="stage-grid"></div>
+      <div class="stage-tag"><span class="dot"></span>Live · Storm-triggered</div>
+      <div class="stage-dim">1080 × 1920 · 9:16</div>
+
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="phone-notch"></div>
+          <div class="phone-statusbar">
+            <span>9:47</span>
+            <div class="sb-icons"><span class="sb-icon-signal"></span><span class="sb-icon-wifi"></span><span class="sb-battery"></span></div>
+          </div>
+
+          <div class="ad-meta-story">
+            <!-- IG chrome -->
+            <div class="ig-chrome">
+              <div class="ig-avatar">RB</div>
+              <div>
+                <div class="ig-handle">roofboys.dfw</div>
+                <div class="ig-sponsored">Sponsored · Frisco, TX</div>
+              </div>
+              <div class="ig-more">···</div>
+            </div>
+
+            <div class="story-hero">
+              <div class="cloud c1"></div>
+              <div class="cloud c2"></div>
+              <div class="cloud c3"></div>
+              <!-- lightning -->
+              <svg class="lightning" viewBox="0 0 80 220" fill="none">
+                <path d="M44 0 L22 110 L42 108 L18 220 L48 92 L30 94 Z" fill="#E8E6E1" opacity="0.92"/>
+                <path d="M44 0 L22 110 L42 108 L18 220 L48 92 L30 94 Z" fill="#fff" opacity="0.4" transform="translate(-2 -2)"/>
+              </svg>
+              <div class="rain"></div>
+              <div class="skyline">
+                <svg viewBox="0 0 340 120" preserveAspectRatio="none">
+                  <g fill="#000" opacity="0.92">
+                    <rect x="0" y="70" width="30" height="50"/>
+                    <rect x="32" y="54" width="20" height="66"/>
+                    <polygon points="52,54 62,40 72,54 72,120 52,120"/>
+                    <rect x="72" y="60" width="26" height="60"/>
+                    <polygon points="98,60 116,44 134,60 134,120 98,120"/>
+                    <rect x="134" y="68" width="34" height="52"/>
+                    <polygon points="168,68 184,50 200,68 200,120 168,120"/>
+                    <rect x="200" y="56" width="24" height="64"/>
+                    <rect x="224" y="64" width="28" height="56"/>
+                    <polygon points="252,64 268,48 284,64 284,120 252,120"/>
+                    <rect x="284" y="72" width="28" height="48"/>
+                    <rect x="312" y="58" width="28" height="62"/>
+                  </g>
+                  <g fill="#E8442C" opacity="0.8">
+                    <rect x="106" y="52" width="2" height="6"/>
+                    <rect x="178" y="58" width="2" height="6"/>
+                    <rect x="260" y="56" width="2" height="6"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <!-- overlay actions -->
+            <div class="ig-actions">
+              <svg class="ig-action" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5-7-11a4 4 0 018-1 4 4 0 018 1c0 6-7 11-7 11z"/></svg>
+              <svg class="ig-action" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11a8 8 0 01-11.8 7L3 20l2-6.2A8 8 0 1121 11z"/></svg>
+              <svg class="ig-action" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l16 8-16 8 3-8-3-8z"/></svg>
+            </div>
+
+            <div class="story-content">
+              <div class="story-wordmark">
+                <div class="rb rb-wordmark">ROOFBOYS<span class="dot">.</span></div>
+                <div class="license">TX LIC #RCAT-2011-0842</div>
+              </div>
+              <div class="story-eyebrow">Hail alert · Frisco 75034</div>
+              <div class="story-headline">Hail just hit Frisco.</div>
+              <div class="story-sub"><strong>22-minute inspection.</strong> Same-day quote. In-house crews — never subcontracted.</div>
+              <div class="story-cta"><span>Book Inspection</span><span class="arrow">→</span></div>
+              <div class="story-trust">
+                <span class="stars">★★★★★</span>
+                <span>4.9</span><span class="sep">·</span>
+                <span>217 reviews</span><span class="sep">·</span>
+                <span>GAF Master Elite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSET 02 — META 1:1 SQUARE -->
+  <section class="asset">
+    <div class="asset-head">
+      <div>
+        <div class="label"><strong>02</strong>Meta · Feed · 1:1 · Trust-led evergreen</div>
+        <h2>The specific, accountable promise — a number, a window, a consequence if missed.</h2>
+      </div>
+      <p class="caption">Runs year-round across DFW homeowner segments. Built to carry cost-per-lead on its own, without a storm tailwind.</p>
+    </div>
+    <div class="asset-stage">
+      <div class="stage-grid"></div>
+      <div class="stage-tag"><span class="dot"></span>Evergreen · Always-on</div>
+      <div class="stage-dim">1080 × 1080 · 1:1</div>
+
+      <div class="square-wrap">
+        <div class="square-inner">
+          <div class="square-top">
+            <div class="rb rb-wordmark">ROOFBOYS<span class="dot">.</span></div>
+            <div class="meta">Dallas · Fort Worth · Est. 2011</div>
+          </div>
+
+          <div class="square-eyebrow">The 22-minute promise</div>
+          <div class="square-headline">
+            The only DFW roofer that <span class="serif">guarantees</span> a 22-minute inspection —<br>
+            or <span class="copper">we pay you $100</span>.
+          </div>
+          <p class="square-sub">Called in the morning. Inspected by lunch. Quote in your inbox before dinner. In-house crews, lifetime workmanship warranty, 217 five-star neighbors.</p>
+
+          <div class="square-chips">
+            <span class="chip"><span class="n">◆</span>In-House Crews</span>
+            <span class="chip"><span class="n">◆</span>Lifetime Warranty</span>
+            <span class="chip"><span class="n">◆</span>217 Google Reviews</span>
+          </div>
+
+          <div class="square-footer">
+            <a class="square-cta"><span>Book Yours</span><span class="arrow">→</span></a>
+            <div class="square-service">Serving Dallas · Plano · Frisco · Allen<br><strong>and all of DFW</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSET 03 — GOOGLE SERP -->
+  <section class="asset">
+    <div class="asset-head">
+      <div>
+        <div class="label"><strong>03</strong>Google · Search RSA · Sponsored result</div>
+        <h2>Shows up when a DFW homeowner searches "roof inspection near me" — reads like the obvious choice, not an ad.</h2>
+      </div>
+      <p class="caption">Headline carries the 22-minute differentiator. Description earns the click with specific proof, not adjectives. Sitelinks route intent directly.</p>
+    </div>
+    <div class="asset-stage">
+      <div class="stage-grid"></div>
+      <div class="stage-tag"><span class="dot"></span>High-intent capture</div>
+      <div class="stage-dim">google.com/search · Dallas, TX</div>
+
+      <div class="serp-wrap">
+        <div class="serp-searchbar">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 10-.7.7l.27.28v.79l5 4.99L20.49 19zm-6 0A4.5 4.5 0 119.5 5a4.5 4.5 0 010 9z"/></svg>
+          <input value="roof inspection near me frisco tx" readonly>
+          <svg class="mic" viewBox="0 0 24 24" fill="#4285f4"><path d="M12 15a3 3 0 003-3V6a3 3 0 10-6 0v6a3 3 0 003 3z"/><path d="M19 12a7 7 0 01-14 0H3a9 9 0 008 8.94V23h2v-2.06A9 9 0 0021 12z"/></svg>
+        </div>
+        <div class="serp-tabs">
+          <div class="serp-tab active">All</div>
+          <div class="serp-tab">Maps</div>
+          <div class="serp-tab">Images</div>
+          <div class="serp-tab">Videos</div>
+          <div class="serp-tab">Shopping</div>
+          <div class="serp-tab">News</div>
+        </div>
+        <div class="serp-stats">About 1,480,000 results (0.38 seconds)</div>
+
+        <!-- THE AD -->
+        <div class="serp-ad">
+          <div class="serp-ad-top">
+            <span class="serp-ad-label">Sponsored</span>
+            <span class="serp-ad-rating"><span class="stars">★</span> Ad · 4.9 Rated</span>
+          </div>
+          <div class="serp-url">
+            <div class="serp-favicon">R.</div>
+            <div>
+              <div style="font-size:14px;color:#202124">Roofboys Roofing &amp; Construction</div>
+              <div style="font-size:12px;color:#5f6368">https://www.roofboysrestores.com</div>
+            </div>
+          </div>
+          <h3 class="serp-title">Roofboys Roofing — DFW's 22-Minute Inspection Guarantee</h3>
+          <p class="serp-desc"><span class="b">In-house crews. Same-day quotes. Lifetime warranty.</span> 217 five-star Google reviews across Dallas, Plano, and Frisco. Over 2,047 roofs restored since 2011. Licensed TX #RCAT-2011-0842. Book in 60 seconds — or we pay you $100.</p>
+
+          <div class="serp-phone-row">
+            <div class="serp-phone-chip call">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 00-1.02.24l-2.2 2.2a15.1 15.1 0 01-6.6-6.6l2.2-2.2a1 1 0 00.24-1.02A11.4 11.4 0 018.5 4a1 1 0 00-1-1H4a1 1 0 00-1 1c0 9.39 7.61 17 17 17a1 1 0 001-1v-3.5a1 1 0 00-1-1z"/></svg>
+              Call (972) 595-2411
+            </div>
+            <div class="serp-phone-chip">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3" fill="#fff"/></svg>
+              Directions
+            </div>
+          </div>
+
+          <div class="serp-sitelinks">
+            <div class="serp-sitelink">
+              <a>Storm Damage</a>
+              <div class="d">24-hr dispatch · hail &amp; wind</div>
+            </div>
+            <div class="serp-sitelink">
+              <a>Residential Roofing</a>
+              <div class="d">Full replacement · repairs</div>
+            </div>
+            <div class="serp-sitelink">
+              <a>Insurance Claims</a>
+              <div class="d">We handle the adjuster</div>
+            </div>
+            <div class="serp-sitelink">
+              <a>Free Inspection</a>
+              <div class="d">22-min promise · $100 if missed</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- organic ghost for realism -->
+        <div class="serp-organic">
+          <div class="serp-url">
+            <div class="serp-favicon" style="background:#ccc;color:#666">G.</div>
+            <div>
+              <div style="font-size:14px;color:#202124">Roofing contractors in Frisco, TX</div>
+              <div style="font-size:12px;color:#5f6368">https://www.google.com › maps</div>
+            </div>
+          </div>
+          <h3 class="serp-title">Top 10 roofing contractors near Frisco — Google Maps</h3>
+          <p class="serp-desc">Find local roofing contractors with reviews, directions and hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSET 04 — DISPLAY BANNER 728x90 -->
+  <section class="asset">
+    <div class="asset-head">
+      <div>
+        <div class="label"><strong>04</strong>Google Display · 728 × 90 · Leaderboard</div>
+        <h2>Placed in weather-adjacent inventory and local news networks; built for glance-legibility at 90px tall.</h2>
+      </div>
+      <p class="caption">Left: identity + license. Middle: the trigger. Right: a phone number that rings an in-house dispatcher — not a voicemail.</p>
+    </div>
+    <div class="asset-stage" style="padding:80px 24px">
+      <div class="stage-grid"></div>
+      <div class="stage-tag"><span class="dot"></span>Display · GDN</div>
+      <div class="stage-dim">728 × 90 · Leaderboard (shown @ 1.5×)</div>
+
+      <div class="banner-frame">
+        <div class="banner-label"><strong>Rendered at 1.5×</strong>actual 728 × 90 px</div>
+        <div class="banner">
+          <div class="banner-left">
+            <div class="rb rb-wordmark">ROOFBOYS<span class="dot">.</span></div>
+            <div class="banner-license"><strong>TX LIC</strong> · #RCAT-2011-0842</div>
+          </div>
+          <div class="banner-bars">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="banner-mid">
+            <div class="banner-eyebrow">Storm dispatch · DFW</div>
+            <div class="banner-hl">Storm hit your neighborhood? <em>We're on-site in 24 hours.</em></div>
+          </div>
+          <div class="banner-right">
+            <a class="banner-cta">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 00-1.02.24l-2.2 2.2a15.1 15.1 0 01-6.6-6.6l2.2-2.2a1 1 0 00.24-1.02A11.4 11.4 0 018.5 4a1 1 0 00-1-1H4a1 1 0 00-1 1c0 9.39 7.61 17 17 17a1 1 0 001-1v-3.5a1 1 0 00-1-1z"/></svg>
+              Call 972-595-2411
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-foot">
+    <div><strong>Grwthly × Roofboys</strong> · Ad Creative Pack</div>
+    <div>Confidential · April 2026 · 1 of 1</div>
+  </footer>
+
+</div>
+</body>
+</html>

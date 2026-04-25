@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grwthly × Roofboys — Services &amp; Deliverables</title>
+<meta name="description" content="Prepared for Roofboys Roofing &amp; Construction. Pick a service, or pick the full Location Growth Engine™ — built specifically for the DFW roofing market.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --obsidian: #0A0A0B;
+    --slate: #14171C;
+    --slate-2: #1B1F25;
+    --graphite: #2A2F37;
+    --graphite-2: #1A1E24;
+    --bone: #F5F2EC;
+    --ink: #E8E6E1;
+    --ink-dim: #8A8A8F;
+    --ink-mute: #56565B;
+    --copper: #E8442C;
+    --copper-light: #FF6F4C;
+    --copper-deep: #B92E1A;
+    --pulse: #7DF9C5;
+    --line: rgba(232, 230, 225, 0.08);
+    --line-strong: rgba(232, 230, 225, 0.14);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--obsidian);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1300px; margin: 0 auto; padding: 0 48px; }
+
+  /* ========== NAV ========== */
+  nav.top {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(10, 10, 11, 0.86);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+  }
+  nav.top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 32px; }
+  .logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--bone);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo .dot { color: var(--copper); }
+  .logo .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-dim);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-left: 1px solid var(--line-strong);
+    padding-left: 14px;
+  }
+  nav.top .links {
+    display: flex; gap: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  nav.top .links a { color: var(--ink-dim); text-decoration: none; transition: color 0.2s; }
+  nav.top .links a:hover { color: var(--copper); }
+  .nav-cta {
+    background: var(--copper);
+    color: var(--bone);
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.005em;
+  }
+  .nav-cta:hover { background: var(--copper-deep); }
+
+  /* ========== HERO ========== */
+  .hero {
+    padding: 160px 0 120px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -20%; right: -10%;
+    width: 900px; height: 900px;
+    background: radial-gradient(circle, rgba(232, 68, 44, 0.08) 0%, transparent 55%);
+    z-index: 0;
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 1050px; }
+  .hero .eyebrow {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 32px;
+    font-weight: 600;
+  }
+  .hero .eyebrow::before {
+    content: '';
+    width: 8px; height: 8px;
+    background: var(--pulse);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--pulse);
+  }
+  .hero h1 {
+    font-size: 108px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+    color: var(--bone);
+    margin-bottom: 32px;
+  }
+  .hero h1 .accent {
+    color: var(--copper);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-variation-settings: "opsz" 144;
+  }
+  .hero .lede {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--ink-dim);
+    line-height: 1.4;
+    font-variation-settings: "opsz" 144;
+    max-width: 820px;
+    margin-bottom: 48px;
+  }
+  .hero .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    padding: 16px 28px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    letter-spacing: -0.005em;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    border: none;
+  }
+  .btn-p { background: var(--copper); color: var(--bone); }
+  .btn-p:hover { background: var(--copper-deep); }
+  .btn-s { background: transparent; color: var(--bone); border: 1.5px solid var(--line-strong); }
+  .btn-s:hover { border-color: var(--bone); }
+
+  /* ========== HOW IT WORKS ========== */
+  section { padding: 96px 0; border-top: 1px solid var(--line); }
+  .section-head { max-width: 1050px; margin-bottom: 72px; }
+  .section-head .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .section-head h2 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1;
+    color: var(--bone);
+    margin-bottom: 24px;
+  }
+  .section-head h2 .accent {
+    color: var(--copper);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-variation-settings: "opsz" 144;
+  }
+  .section-head .lede {
+    font-size: 20px;
+    line-height: 1.55;
+    color: var(--ink-dim);
+    max-width: 820px;
+  }
+
+  .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .how-card {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 40px 36px;
+    position: relative;
+  }
+  .how-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--copper); }
+  .how-card .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--copper);
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .how-card h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--bone);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .how-card p {
+    font-size: 15px;
+    color: var(--ink-dim);
+    line-height: 1.55;
+  }
+
+  /* ========== SERVICES ========== */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .service {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 40px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+  .service::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--copper);
+    transition: width 0.25s;
+  }
+  .service:hover {
+    transform: translateY(-3px);
+    border-color: rgba(232, 68, 44, 0.3);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .service.selected {
+    background: linear-gradient(135deg, var(--slate-2) 0%, rgba(232, 68, 44, 0.12) 100%);
+    border-color: rgba(232, 68, 44, 0.5);
+  }
+  .service.selected::before { width: 5px; }
+  .service.flagship {
+    background: linear-gradient(135deg, rgba(232, 68, 44, 0.06) 0%, var(--slate-2) 100%);
+    border-color: rgba(232, 68, 44, 0.35);
+    grid-column: 1 / -1;
+  }
+  .service.flagship::before { background: linear-gradient(180deg, var(--copper) 0%, var(--pulse) 100%); width: 4px; }
+
+  .service-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .service .service-type {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--copper);
+    font-weight: 600;
+  }
+  .service .check-box {
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid var(--line-strong);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .service.selected .check-box {
+    background: var(--copper);
+    border-color: var(--copper);
+  }
+  .service .check-box svg {
+    width: 14px; height: 14px;
+    stroke: var(--bone);
+    stroke-width: 3;
+    fill: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .service.selected .check-box svg { opacity: 1; }
+
+  .service h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--bone);
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+  .service.flagship h3 { font-size: 40px; }
+  .service h3 .tm { color: var(--copper); font-weight: 500; font-size: 0.7em; vertical-align: top; }
+  .service .pitch {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    color: var(--ink-dim);
+    font-style: italic;
+    line-height: 1.5;
+    font-variation-settings: "opsz" 144;
+  }
+  .service .pitch .accent { color: var(--copper-light); }
+  .service .divider { height: 1px; background: var(--line); margin: 4px 0; }
+  .service .spec-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .service .spec-row .v { color: var(--bone); font-weight: 600; }
+  .service .deliverables { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .service .deliverables li {
+    font-size: 14px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+    padding-left: 18px;
+    position: relative;
+  }
+  .service .deliverables li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--copper);
+    font-weight: 700;
+  }
+  .service .service-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  .service .price {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--bone);
+    letter-spacing: -0.02em;
+  }
+  .service .price small {
+    font-size: 12px;
+    color: var(--ink-dim);
+    font-weight: 500;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-left: 6px;
+  }
+  .service .price .from {
+    font-size: 11px;
+    color: var(--ink-dim);
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+  .service.flagship .price { color: var(--copper); font-size: 30px; }
+  .service .example-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* ========== ASSET GALLERY — SIDE BY SIDE ========== */
+  .gallery-sticky-head {
+    position: sticky;
+    top: 72px;
+    background: rgba(10, 10, 11, 0.94);
+    backdrop-filter: blur(16px);
+    z-index: 50;
+    padding: 16px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--line);
+  }
+  .gallery-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .filter-chip {
+    padding: 8px 14px;
+    border: 1px solid var(--line-strong);
+    border-radius: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: transparent;
+  }
+  .filter-chip:hover { color: var(--bone); border-color: var(--bone); }
+  .filter-chip.active { color: var(--copper); border-color: var(--copper); background: rgba(232, 68, 44, 0.08); }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .asset-preview {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .asset-preview .stage {
+    aspect-ratio: 4 / 3;
+    position: relative;
+    overflow: hidden;
+    background: var(--obsidian);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .asset-preview .info {
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid var(--line);
+  }
+  .asset-preview .info .type {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    font-weight: 600;
+  }
+  .asset-preview .info h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--bone);
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+  }
+  .asset-preview .info p {
+    font-size: 14px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+  }
+
+  /* Mini-mockups built in CSS (stand-in for screenshots) */
+  .mini-brief {
+    width: 70%; height: 80%;
+    background: var(--bone);
+    color: var(--obsidian);
+    padding: 16px 18px;
+    border-radius: 4px;
+    display: flex; flex-direction: column; gap: 6px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    font-family: 'Inter', sans-serif;
+    transform: rotate(-1deg);
+  }
+  .mini-brief .eye { font-family: 'JetBrains Mono', monospace; font-size: 6px; letter-spacing: 0.2em; color: var(--copper); font-weight: 600; text-transform: uppercase; }
+  .mini-brief .title { font-size: 14px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+  .mini-brief .rule { height: 1px; background: var(--copper); width: 36px; }
+  .mini-brief .body { font-size: 5px; color: #555; line-height: 1.4; }
+  .mini-brief .num { font-size: 28px; font-weight: 800; color: var(--copper); letter-spacing: -0.03em; line-height: 1; margin-top: 4px; }
+
+  .mini-deck {
+    width: 75%; height: 85%;
+    background: var(--obsidian);
+    border: 1px solid var(--line-strong);
+    border-radius: 6px;
+    padding: 18px 20px;
+    display: flex; flex-direction: column; gap: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    color: var(--bone);
+    font-family: 'Inter', sans-serif;
+  }
+  .mini-deck .eye { font-family: 'JetBrains Mono', monospace; font-size: 6px; letter-spacing: 0.2em; color: var(--copper); font-weight: 600; text-transform: uppercase; }
+  .mini-deck .title { font-size: 18px; font-weight: 800; letter-spacing: -0.03em; line-height: 0.95; }
+  .mini-deck .title em { color: var(--copper); font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; }
+  .mini-deck .dots { display: flex; gap: 4px; margin-top: auto; }
+  .mini-deck .dots span { width: 5px; height: 5px; border-radius: 50%; background: var(--line-strong); }
+  .mini-deck .dots span.on { background: var(--copper); }
+
+  .mini-phone {
+    width: 100px; height: 200px;
+    background: #0A0A0B;
+    border-radius: 14px;
+    padding: 4px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.6), 0 0 0 1.5px var(--graphite);
+    position: relative;
+  }
+  .mini-phone .screen {
+    width: 100%; height: 100%;
+    background: linear-gradient(180deg, #1a0906 0%, #0A0A0B 70%);
+    border-radius: 11px;
+    display: flex; flex-direction: column;
+    padding: 12px 8px 10px;
+    gap: 4px;
+  }
+  .mini-phone .notch { position: absolute; top: 6px; left: 50%; transform: translateX(-50%); width: 32px; height: 10px; background: #000; border-radius: 6px; }
+  .mini-phone .logo { font-size: 7px; font-weight: 800; color: #fff; margin-top: 10px; letter-spacing: 0.05em; }
+  .mini-phone .logo .d { color: var(--copper); }
+  .mini-phone .eye { font-size: 5px; font-family: 'JetBrains Mono', monospace; color: var(--copper); letter-spacing: 0.15em; margin-top: auto; }
+  .mini-phone .head { font-size: 10px; font-weight: 800; color: var(--bone); line-height: 1; letter-spacing: -0.02em; }
+  .mini-phone .btn-s { font-size: 5px; color: var(--bone); background: var(--copper); padding: 3px 6px; border-radius: 2px; align-self: flex-start; font-weight: 600; }
+  .mini-phone .stars { color: #FFB347; font-size: 6px; letter-spacing: 1px; }
+
+  .mini-site {
+    width: 78%; height: 82%;
+    background: var(--obsidian);
+    border: 1px solid var(--line-strong);
+    border-radius: 6px;
+    padding: 14px 16px 10px;
+    display: flex; flex-direction: column; gap: 6px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    color: var(--bone);
+  }
+  .mini-site .bar { display: flex; gap: 3px; margin-bottom: 4px; }
+  .mini-site .bar span { width: 6px; height: 6px; border-radius: 50%; background: var(--line-strong); }
+  .mini-site .bar span:first-child { background: #ff5f57; }
+  .mini-site .bar span:nth-child(2) { background: #febc2e; }
+  .mini-site .bar span:nth-child(3) { background: #28c840; }
+  .mini-site .nav { display: flex; justify-content: space-between; padding-bottom: 6px; border-bottom: 1px solid var(--line-strong); font-size: 7px; color: var(--ink-dim); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; }
+  .mini-site .nav .brand { color: var(--bone); font-weight: 800; letter-spacing: 0.02em; }
+  .mini-site .hero-t { font-size: 13px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.02; margin-top: 4px; }
+  .mini-site .hero-t em { color: var(--copper); font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; }
+  .mini-site .stars { color: #FFB347; font-size: 7px; letter-spacing: 1px; }
+  .mini-site .btn { background: var(--copper); color: var(--bone); font-size: 6px; padding: 3px 8px; border-radius: 2px; align-self: flex-start; font-weight: 600; }
+
+  .mini-palette {
+    display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr;
+    gap: 4px;
+    width: 75%; height: 70%;
+    border-radius: 6px; overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+  .mini-palette .swatch { display: flex; flex-direction: column; justify-content: flex-end; padding: 8px; font-family: 'JetBrains Mono', monospace; font-size: 7px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; }
+  .mini-palette .s1 { background: #14171C; color: #F5F2EC; }
+  .mini-palette .s2 { background: #2A2F37; color: #E8E6E1; }
+  .mini-palette .s3 { background: #F5F2EC; color: #14171C; }
+  .mini-palette .s4 { background: #E8442C; color: #F5F2EC; }
+  .mini-palette .s5 { background: #8A8A8F; color: #14171C; }
+  .mini-palette .s6 { background: #7DF9C5; color: #14171C; }
+
+  .mini-content {
+    width: 74%; height: 84%;
+    background: var(--obsidian);
+    border: 1px solid var(--line-strong);
+    border-radius: 6px;
+    padding: 16px 18px;
+    display: flex; flex-direction: column; gap: 6px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+  .mini-content .eye { font-family: 'JetBrains Mono', monospace; font-size: 6px; letter-spacing: 0.2em; color: var(--copper); font-weight: 600; text-transform: uppercase; }
+  .mini-content .head { font-size: 14px; font-weight: 800; color: var(--bone); letter-spacing: -0.025em; line-height: 0.95; }
+  .mini-content .head em { color: var(--copper); font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; }
+  .mini-content .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-top: 4px; }
+  .mini-content .p { background: rgba(232, 68, 44, 0.1); border-left: 1.5px solid var(--copper); padding: 4px 6px; font-size: 6px; color: var(--bone); line-height: 1.3; }
+
+  /* ========== STACK BUILDER ========== */
+  .stack-bar {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(120px);
+    width: calc(100% - 48px);
+    max-width: 880px;
+    background: var(--slate-2);
+    border: 1px solid rgba(232, 68, 44, 0.5);
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    z-index: 80;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(232, 68, 44, 0.1);
+    transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
+  }
+  .stack-bar.active { transform: translateX(-50%) translateY(0); }
+  .stack-bar .stack-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .stack-bar .count {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--copper);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    min-width: 40px;
+  }
+  .stack-bar .count-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .stack-bar .count-label strong { color: var(--bone); font-weight: 700; }
+  .stack-bar .stack-preview {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    max-width: 280px;
+  }
+  .stack-bar .stack-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink);
+    padding: 4px 8px;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    font-weight: 500;
+  }
+  .stack-bar .stack-cta {
+    background: var(--copper);
+    color: var(--bone);
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.005em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+  }
+  .stack-bar .stack-cta:hover { background: var(--copper-deep); }
+  .stack-bar .clear {
+    background: transparent;
+    border: none;
+    color: var(--ink-dim);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .stack-bar .clear:hover { color: var(--copper); }
+
+  /* ========== HOW IT SHIPS ========== */
+  .timeline-rail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    position: relative;
+  }
+  .timeline-rail::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 3%; right: 3%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--copper) 0%, rgba(232, 68, 44, 0.2) 100%);
+  }
+  .timeline-node {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 36px 26px 28px;
+    position: relative;
+  }
+  .timeline-node .dot {
+    position: absolute;
+    top: -6px;
+    left: 24px;
+    width: 14px; height: 14px;
+    background: var(--copper);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--obsidian), 0 0 16px rgba(232, 68, 44, 0.5);
+  }
+  .timeline-node .w {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .timeline-node h4 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--bone);
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+  .timeline-node p {
+    font-size: 13.5px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+  }
+
+  /* ========== FAQ ========== */
+  .faq-wrap { max-width: 880px; }
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 24px 0;
+  }
+  .faq-item summary {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    color: var(--bone);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    color: var(--copper);
+    font-weight: 400;
+    transition: transform 0.2s;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .a {
+    margin-top: 14px;
+    font-size: 15px;
+    color: var(--ink-dim);
+    line-height: 1.65;
+  }
+
+  /* ========== FINAL CTA ========== */
+  .final {
+    background: linear-gradient(135deg, var(--slate-2) 0%, rgba(232, 68, 44, 0.08) 100%);
+    border: 1px solid rgba(232, 68, 44, 0.3);
+    border-radius: 16px;
+    padding: 96px 80px;
+    text-align: center;
+  }
+  .final .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+  .final h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 72px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+    color: var(--bone);
+    font-variation-settings: "opsz" 144;
+    margin-bottom: 24px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .final h2 .accent { color: var(--copper); font-style: italic; }
+  .final p {
+    font-size: 19px;
+    color: var(--ink-dim);
+    max-width: 720px;
+    margin: 0 auto 40px;
+    line-height: 1.55;
+  }
+  .final .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  /* ========== FOOTER ========== */
+  footer {
+    padding: 72px 0 40px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-dim);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 56px;
+  }
+  footer h5 {
+    color: var(--bone);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  footer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  footer a { color: rgba(232, 230, 225, 0.5); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  footer a:hover { color: var(--copper); }
+  footer .brand-col p { font-size: 14px; color: rgba(232, 230, 225, 0.5); line-height: 1.6; margin-bottom: 20px; }
+  .footer-bottom {
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: rgba(232, 230, 225, 0.4);
+  }
+
+  /* ============= HIGH-FIDELITY AD GALLERY ============= */
+  .hifi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .hifi-card { background: var(--slate-2); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+  .hifi-stage {
+    background: linear-gradient(180deg, var(--graphite-2) 0%, var(--obsidian) 100%);
+    padding: 64px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 540px;
+    overflow: hidden;
+  }
+  .hifi-stage::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(232, 230, 225, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(232, 230, 225, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    pointer-events: none;
+  }
+  .hifi-tag { position: absolute; top: 16px; left: 20px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute); display: flex; align-items: center; gap: 8px; z-index: 5; }
+  .hifi-tag .dot { width: 6px; height: 6px; background: var(--pulse); border-radius: 50%; box-shadow: 0 0 6px var(--pulse); }
+  .hifi-dim { position: absolute; top: 16px; right: 20px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-mute); z-index: 5; }
+  .hifi-info { padding: 28px 32px; display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); }
+  .hifi-info .type { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--copper); font-weight: 600; }
+  .hifi-info h4 { font-size: 22px; font-weight: 700; color: var(--bone); letter-spacing: -0.015em; line-height: 1.2; }
+  .hifi-info p { font-size: 14.5px; color: var(--ink-dim); line-height: 1.55; }
+
+  /* iPhone frame */
+  .iphone { width: 250px; height: 500px; background: #0A0A0B; border-radius: 38px; padding: 7px; box-shadow: 0 30px 60px rgba(0,0,0,0.55), 0 0 0 1.5px #2b2d33, 0 0 0 2.5px #0e1013; position: relative; z-index: 2; }
+  .iphone-screen { width: 100%; height: 100%; border-radius: 31px; overflow: hidden; background: #000; position: relative; }
+  .iphone-notch { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 82px; height: 22px; background: #000; border-radius: 14px; z-index: 10; }
+  .iphone-status { position: relative; z-index: 9; display: flex; justify-content: space-between; align-items: center; padding: 10px 22px 0; color: #fff; font-family: -apple-system, 'SF Pro Text', 'Inter', sans-serif; font-size: 12px; font-weight: 600; height: 38px; }
+  .status-icons { display: flex; gap: 4px; align-items: center; font-size: 10px; }
+
+  /* Meta Story */
+  .story-ad { position: absolute; inset: 38px 0 0; background: linear-gradient(180deg, #1a1418 0%, #0e0d12 50%, #1f0c08 100%); display: flex; flex-direction: column; padding: 14px 16px 22px; color: #fff; }
+  .story-ad .brand-row { display: flex; align-items: center; justify-content: space-between; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.02em; }
+  .story-ad .brand-row .dot { color: var(--copper); }
+  .story-ad .meta-line { font-family: 'JetBrains Mono', monospace; font-size: 8px; color: rgba(255,255,255,0.5); letter-spacing: 0.15em; text-transform: uppercase; }
+  .story-ad .progress { margin-top: 8px; display: flex; gap: 3px; }
+  .story-ad .progress span { flex: 1; height: 2px; background: rgba(255,255,255,0.2); border-radius: 1px; }
+  .story-ad .progress span:first-child { background: rgba(255,255,255,0.9); }
+  .story-ad .body-s { margin-top: auto; display: flex; flex-direction: column; gap: 10px; }
+  .story-ad .alert { font-family: 'JetBrains Mono', monospace; font-size: 8px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--copper-light); display: flex; align-items: center; gap: 6px; font-weight: 600; }
+  .story-ad .alert::before { content: ''; width: 5px; height: 5px; background: var(--copper-light); border-radius: 50%; box-shadow: 0 0 6px var(--copper-light); animation: pulseDot 1.4s infinite; }
+  @keyframes pulseDot { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:0.45;transform:scale(1.45);} }
+  .story-ad .head-s { font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 800; letter-spacing: -0.025em; line-height: 0.98; }
+  .story-ad .sub-s { font-size: 11px; color: rgba(255,255,255,0.75); line-height: 1.45; }
+  .story-ad .sub-s strong { color: #fff; font-weight: 700; }
+  .story-ad .cta-s { background: var(--copper); color: #fff; padding: 10px 14px; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; font-size: 12px; font-weight: 700; }
+  .story-ad .trust-s { display: flex; gap: 6px; align-items: center; font-size: 9px; color: rgba(255,255,255,0.65); flex-wrap: wrap; }
+  .story-ad .stars { color: #FFB347; letter-spacing: 1.5px; font-size: 9px; }
+
+  /* Square Meta */
+  .square-ad { width: 340px; min-height: 340px; background: var(--bone); border-radius: 12px; padding: 28px 30px; display: flex; flex-direction: column; gap: 14px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.4); color: var(--obsidian); }
+  .square-ad .top { display: flex; justify-content: space-between; align-items: center; }
+  .square-ad .br { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 16px; letter-spacing: 0.02em; }
+  .square-ad .br .dot { color: var(--copper); }
+  .square-ad .mt { font-family: 'JetBrains Mono', monospace; font-size: 8px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-mute); font-weight: 500; }
+  .square-ad .eb { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--copper); font-weight: 600; }
+  .square-ad h5 { font-size: 19px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.1; }
+  .square-ad h5 em { font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; font-variation-settings: "opsz" 144; }
+  .square-ad h5 .copper { color: var(--copper); }
+  .square-ad .chips { display: flex; gap: 5px; flex-wrap: wrap; }
+  .square-ad .chip-s { font-size: 8px; font-weight: 700; padding: 4px 7px; background: var(--obsidian); color: var(--bone); border-radius: 3px; letter-spacing: 0.04em; }
+  .square-ad .row { display: flex; align-items: center; justify-content: space-between; margin-top: auto; }
+  .square-ad .cta-q { background: var(--copper); color: #fff; padding: 9px 14px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+  .square-ad .city { font-size: 8px; color: var(--ink-mute); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; text-transform: uppercase; text-align: right; line-height: 1.5; font-weight: 500; }
+
+  /* Google SERP */
+  .serp { width: 100%; max-width: 640px; background: #fff; border-radius: 8px; padding: 22px 26px; font-family: 'Roboto', Arial, sans-serif; color: #202124; box-shadow: 0 25px 50px rgba(0,0,0,0.45); }
+  .serp .top { display: flex; justify-content: space-between; align-items: center; padding-bottom: 14px; border-bottom: 1px solid #e8eaed; margin-bottom: 18px; }
+  .serp .gtitle { font-family: Arial, sans-serif; font-size: 24px; font-weight: 400; letter-spacing: -0.5px; }
+  .serp .gtitle .b { color: #4285F4; }
+  .serp .gtitle .r { color: #EA4335; }
+  .serp .gtitle .y { color: #FBBC04; }
+  .serp .gtitle .g { color: #34A853; }
+  .serp .input { flex: 1; margin-left: 18px; background: #f1f3f4; border-radius: 18px; padding: 6px 14px; font-size: 13px; color: #5f6368; }
+  .serp .ad-tag { font-size: 13px; font-weight: 700; color: #1a73e8; margin-bottom: 4px; display: inline-block; }
+  .serp .url { font-size: 13px; color: #5f6368; margin-bottom: 4px; }
+  .serp h5 { font-size: 19px; font-weight: 400; color: #1a0dab; line-height: 1.3; margin-bottom: 4px; }
+  .serp .desc { font-size: 13px; color: #4d5156; line-height: 1.5; }
+  .serp .sitelinks { margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+  .serp .sitelink { font-size: 13px; color: #1a0dab; }
+  .serp .stars-row { margin-top: 10px; font-size: 12px; color: #5f6368; }
+  .serp .stars-row .s { color: #FFB347; letter-spacing: 1px; }
+
+  /* Display Banner */
+  .display-banner { width: 100%; max-width: 720px; background: linear-gradient(135deg, #14171C 0%, #1f0c08 100%); border-radius: 8px; padding: 26px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; color: var(--bone); border: 1px solid var(--line-strong); box-shadow: 0 25px 50px rgba(0,0,0,0.4); }
+  .display-banner .left { display: flex; align-items: center; gap: 18px; }
+  .display-banner .br { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 18px; letter-spacing: 0.02em; }
+  .display-banner .br .dot { color: var(--copper); }
+  .display-banner .lic { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-dim); border-left: 1px solid var(--line-strong); padding-left: 14px; font-weight: 500; }
+  .display-banner .copy { flex: 1; font-size: 14px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3; }
+  .display-banner .copy em { font-family: 'Fraunces', serif; font-style: italic; color: var(--copper-light); font-weight: 500; }
+  .display-banner .b-cta { background: var(--copper); color: #fff; padding: 10px 16px; border-radius: 4px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+
+  /* GBP Post */
+  .gbp-post { width: 290px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.4); font-family: 'Roboto', Arial, sans-serif; }
+  .gbp-post .head-g { padding: 12px 16px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #e8eaed; }
+  .gbp-post .avatar { width: 34px; height: 34px; background: var(--obsidian); color: var(--copper); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; }
+  .gbp-post .name { font-size: 13px; font-weight: 600; color: #202124; }
+  .gbp-post .when { font-size: 11px; color: #5f6368; }
+  .gbp-post .image { height: 130px; background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.6) 100%), linear-gradient(135deg, #2c343d 0%, #14171C 100%); display: flex; align-items: flex-end; padding: 14px; }
+  .gbp-post .pill { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--copper-light); background: rgba(232, 68, 44, 0.15); padding: 4px 10px; border-radius: 12px; font-weight: 600; border: 1px solid rgba(232, 68, 44, 0.3); }
+  .gbp-post .body-g { padding: 14px 16px; font-size: 12.5px; color: #202124; line-height: 1.5; }
+  .gbp-post .body-g strong { font-weight: 600; }
+  .gbp-post .cta-g { padding: 10px 16px 12px; border-top: 1px solid #e8eaed; font-size: 13px; font-weight: 500; color: #1a73e8; }
+
+  /* Email Newsletter */
+  .email-card { width: 290px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.4); }
+  .email-card .from-row { padding: 12px 18px; background: #f6f7f8; border-bottom: 1px solid #e1e3e5; font-size: 11px; color: #5f6368; }
+  .email-card .from-row strong { color: #202124; font-weight: 600; }
+  .email-card .subj { padding: 12px 18px 6px; font-size: 14px; font-weight: 700; color: #202124; letter-spacing: -0.01em; }
+  .email-card .pre { padding: 0 18px 14px; font-size: 11.5px; color: #5f6368; line-height: 1.45; }
+  .email-card .body-e { padding: 18px 20px; background: var(--bone); display: flex; flex-direction: column; gap: 10px; }
+  .email-card .body-e .eb { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--copper); font-weight: 600; }
+  .email-card .body-e h6 { font-size: 16px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; color: var(--obsidian); }
+  .email-card .body-e h6 em { font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; color: var(--copper); }
+  .email-card .body-e p { font-size: 11.5px; color: #56565B; line-height: 1.5; }
+  .email-card .body-e .b-mini { background: var(--copper); color: #fff; padding: 9px 14px; border-radius: 3px; font-size: 11px; font-weight: 700; align-self: flex-start; }
+
+  /* Site Mock */
+  .site-mock { width: 100%; max-width: 780px; background: var(--obsidian); border-radius: 10px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.5); border: 1px solid var(--line-strong); }
+  .site-mock .browser { background: #1d1f23; padding: 9px 14px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #000; }
+  .site-mock .dots-r { display: flex; gap: 5px; }
+  .site-mock .dots-r span { width: 10px; height: 10px; border-radius: 50%; }
+  .site-mock .dots-r span:nth-child(1) { background: #ff5f57; }
+  .site-mock .dots-r span:nth-child(2) { background: #febc2e; }
+  .site-mock .dots-r span:nth-child(3) { background: #28c840; }
+  .site-mock .url-bar { flex: 1; background: #2a2c30; border-radius: 4px; padding: 4px 10px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #888; text-align: center; letter-spacing: 0.05em; }
+  .site-mock .nav-mock { padding: 16px 28px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); }
+  .site-mock .nav-mock .br { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; color: var(--bone); letter-spacing: 0.02em; }
+  .site-mock .nav-mock .br .dot { color: var(--copper); }
+  .site-mock .nav-mock .links { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-dim); display: flex; gap: 18px; }
+  .site-mock .nav-mock .cta-mini { background: var(--copper); color: #fff; padding: 7px 12px; border-radius: 3px; font-size: 10px; font-weight: 700; }
+  .site-mock .hero-mock { padding: 32px 28px 36px; background: radial-gradient(circle at 80% 20%, rgba(232, 68, 44, 0.1) 0%, transparent 50%), var(--obsidian); }
+  .site-mock .hero-mock .eb { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--copper); margin-bottom: 12px; font-weight: 600; }
+  .site-mock .hero-mock .head-h { font-size: 28px; font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--bone); margin-bottom: 12px; max-width: 460px; }
+  .site-mock .hero-mock .head-h em { font-family: 'Fraunces', serif; font-style: italic; color: var(--copper); font-weight: 500; }
+  .site-mock .hero-mock .sub { font-size: 12px; color: var(--ink-dim); line-height: 1.5; margin-bottom: 16px; max-width: 480px; }
+  .site-mock .hero-mock .row { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; }
+  .site-mock .hero-mock .b-p { background: var(--copper); color: #fff; padding: 9px 14px; border-radius: 3px; font-size: 11px; font-weight: 700; }
+  .site-mock .hero-mock .b-s { border: 1px solid var(--line-strong); color: var(--bone); padding: 9px 14px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+  .site-mock .hero-mock .trust { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-dim); display: flex; gap: 10px; align-items: center; padding-top: 12px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+  .site-mock .hero-mock .stars-h { color: #FFB347; letter-spacing: 1.5px; font-size: 11px; }
+
+  /* Brief PDF mock */
+  .brief-mock { width: 280px; height: 380px; background: var(--obsidian); border-radius: 6px; padding: 28px 30px; display: flex; flex-direction: column; color: var(--bone); box-shadow: 0 25px 50px rgba(0,0,0,0.5); border: 1px solid var(--line-strong); position: relative; transform: rotate(-1deg); }
+  .brief-mock .top-b { display: flex; align-items: center; gap: 8px; padding-bottom: 16px; border-bottom: 1px solid var(--line-strong); font-family: 'Inter', sans-serif; font-weight: 800; font-size: 11px; letter-spacing: 0.18em; }
+  .brief-mock .top-b .x { color: var(--copper); }
+  .brief-mock .eb-b { margin-top: 24px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--copper); font-weight: 600; }
+  .brief-mock .title-b { margin-top: 8px; font-size: 26px; font-weight: 800; letter-spacing: -0.03em; line-height: 1; }
+  .brief-mock .title-b em { font-family: 'Fraunces', serif; font-style: italic; color: var(--copper); font-weight: 500; }
+  .brief-mock .num-big { margin-top: auto; font-size: 52px; font-weight: 800; color: var(--copper); letter-spacing: -0.04em; line-height: 1; }
+  .brief-mock .num-sub { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-dim); margin-top: 6px; font-weight: 600; }
+
+  /* Brand mock */
+  .brand-mock { width: 290px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 25px 50px rgba(0,0,0,0.5); }
+  .brand-mock .row-bm { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .brand-mock .swatch-b { height: 56px; border-radius: 4px; display: flex; flex-direction: column; justify-content: flex-end; padding: 8px 12px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; }
+  .brand-mock .s1 { background: #14171C; color: #F5F2EC; }
+  .brand-mock .s2 { background: #2A2F37; color: #E8E6E1; }
+  .brand-mock .s3 { background: #E8442C; color: #fff; }
+  .brand-mock .s4 { background: #F5F2EC; color: #14171C; }
+  .brand-mock .s5 { background: #8A8A8F; color: #14171C; }
+  .brand-mock .s6 { background: #7DF9C5; color: #14171C; }
+  .brand-mock .typo { margin-top: 8px; background: var(--obsidian); border: 1px solid var(--line-strong); padding: 16px 18px; border-radius: 6px; display: flex; flex-direction: column; gap: 8px; }
+  .brand-mock .typo .l { font-family: 'JetBrains Mono', monospace; font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--copper); font-weight: 600; }
+  .brand-mock .typo .ts { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 22px; color: var(--bone); letter-spacing: -0.025em; line-height: 1; }
+  .brand-mock .typo .tf { font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; font-size: 22px; color: var(--copper); font-variation-settings: "opsz" 144; line-height: 1; }
+  .brand-mock .typo .tm { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-dim); letter-spacing: 0.2em; font-weight: 500; }
+
+  /* System-in-motion flow */
+  .flow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .flow-step { width: 110px; height: 220px; background: #0A0A0B; border-radius: 14px; padding: 4px; box-shadow: 0 20px 35px rgba(0,0,0,0.4), 0 0 0 1px var(--graphite); }
+  .flow-step .scr { width: 100%; height: 100%; border-radius: 11px; overflow: hidden; padding: 9px 8px; display: flex; flex-direction: column; gap: 4px; }
+  .flow-step.s1 .scr { background: linear-gradient(180deg, #1a0906 0%, #0A0A0B 100%); }
+  .flow-step.s2 .scr { background: var(--obsidian); border: 1px solid var(--line); }
+  .flow-step.s3 .scr { background: #fff; padding: 10px 8px; }
+  .flow-step.s4 .scr { background: var(--bone); padding: 10px 8px; }
+  .flow-step .lt { font-family: 'JetBrains Mono', monospace; font-size: 6px; letter-spacing: 0.18em; font-weight: 700; text-transform: uppercase; }
+  .flow-step.s1 .lt { color: var(--copper-light); }
+  .flow-step.s2 .lt-brand { font-size: 7px; font-weight: 800; color: var(--bone); letter-spacing: 0.04em; }
+  .flow-step.s2 .lt-brand .d { color: var(--copper); }
+  .flow-step.s3 .lt { color: var(--copper); }
+  .flow-step.s4 .lt { color: var(--copper); }
+  .flow-step .ht { font-size: 9px; font-weight: 800; letter-spacing: -0.02em; line-height: 1; }
+  .flow-step.s1 .ht { color: var(--bone); }
+  .flow-step.s2 .ht { color: var(--bone); }
+  .flow-step.s4 .ht { color: var(--obsidian); }
+  .flow-step .btn-tiny { background: var(--copper); color: #fff; padding: 3px 6px; border-radius: 2px; font-size: 5.5px; font-weight: 700; align-self: flex-start; margin-top: auto; }
+  .flow-step .sms { background: #E5E5EA; color: #0A0A0B; padding: 4px 6px; border-radius: 8px; font-size: 6px; line-height: 1.3; align-self: flex-start; max-width: 88%; }
+  .flow-step .sms.out { background: #34C759; color: #fff; align-self: flex-end; }
+  .flow-step .check { font-size: 22px; color: var(--copper); font-weight: 700; align-self: center; margin-top: 6px; }
+  .flow-step .det { font-size: 6px; color: #555; line-height: 1.4; margin-top: auto; }
+  .flow-arrow { font-family: 'JetBrains Mono', monospace; color: var(--copper); font-size: 18px; font-weight: 700; position: relative; padding: 0 4px; }
+  .flow-arrow .lab { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 7px; letter-spacing: 0.2em; color: var(--ink-dim); font-weight: 600; text-transform: uppercase; }
+
+  @media (max-width: 960px) {
+    .wrap { padding: 0 24px; }
+    .hero { padding: 80px 0 60px; }
+    .hero h1 { font-size: 54px; }
+    .section-head h2 { font-size: 38px; }
+    .how-grid,
+    .services-grid,
+    .gallery-grid,
+    .hifi-grid,
+    .timeline-rail,
+    .footer-grid { grid-template-columns: 1fr; }
+    .timeline-rail::before { display: none; }
+    .service.flagship { grid-column: 1 / -1; }
+    .service h3 { font-size: 22px; }
+    .service.flagship h3 { font-size: 30px; }
+    nav.top .links { display: none; }
+    .final { padding: 56px 32px; }
+    .final h2 { font-size: 38px; }
+    .stack-bar { flex-wrap: wrap; gap: 14px; }
+    .iphone { width: 200px; height: 400px; }
+    .square-ad { width: 100%; max-width: 320px; }
+    .display-banner { flex-direction: column; align-items: flex-start; padding: 20px; }
+    .flow-step { width: 80px; height: 160px; }
+    .flow-arrow { display: none; }
+    .hifi-card[style*="grid-column"] { grid-column: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="top">
+  <div class="wrap">
+    <a href="#" class="logo">
+      GRWTHLY<span class="dot">.</span>
+      <span class="tag">× ROOFBOYS · Prepared April 2026</span>
+    </a>
+    <div class="links">
+      <a href="#how">How It Works</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">What You Get</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a href="#book" class="nav-cta">Book a Call</a>
+  </div>
+</nav>
+
+<!-- PREPARED-FOR BAND -->
+<div style="background: linear-gradient(90deg, rgba(232, 68, 44, 0.08) 0%, transparent 100%); border-bottom: 1px solid var(--line); padding: 18px 0;">
+  <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--copper); font-weight: 700;">Prepared For</span>
+      <span style="color: var(--bone); font-weight: 600; font-size: 15px;">Roofboys Roofing &amp; Construction</span>
+      <span style="color: var(--ink-dim); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;">DFW · Lewisville HQ</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-dim);">Confidential · Pre-engagement preview</span>
+      <span style="display: flex; align-items: center; gap: 6px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--pulse); font-weight: 600;">
+        <span style="width: 6px; height: 6px; background: var(--pulse); border-radius: 50%; box-shadow: 0 0 6px var(--pulse);"></span>
+        LIVE
+      </span>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" style="padding-top: 100px;">
+  <div class="wrap hero-inner">
+    <div class="eyebrow">PREPARED FOR ROOFBOYS · DFW · APRIL 2026</div>
+    <h1>The services we'd run for <span class="accent">Roofboys.</span> Pick one. Pick the engine. Pick both.</h1>
+    <div class="lede">Every service below is engineered for the DFW roofing market. Available as a standalone build, or as part of the full Location Growth Engine™ — sized to the operator stack you already trust. Select what you need, and we'll scope it on a 15-minute call.</div>
+    <div class="cta-row">
+      <a href="#services" class="btn btn-p">Browse the Services</a>
+      <a href="#gallery" class="btn btn-s">See Live Deliverables</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">01 · How This Works</div>
+      <h2>Three steps. <span class="accent">No proposals.</span> No decks full of promises.</h2>
+      <p class="lede">We work like an operator, not an agency. You pick what you need, we quote it in writing, and every deliverable ships on a fixed timeline. No retainer you can't escape. No vanity metrics.</p>
+    </div>
+
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="n">Step 01</div>
+        <h3>Pick your services below</h3>
+        <p>Check any services that match what you need. Each is scoped, timed, and priced. The full Location Growth Engine™ bundles all of them at the best rate.</p>
+      </div>
+      <div class="how-card">
+        <div class="n">Step 02</div>
+        <h3>15-minute call</h3>
+        <p>We confirm scope and timeline. No selling, no 14-slide discovery deck. You tell me what you're trying to fix. I tell you whether these services fix it.</p>
+      </div>
+      <div class="how-card">
+        <div class="n">Step 03</div>
+        <h3>We ship on a fixed timeline</h3>
+        <p>A signed SOW, a kickoff call, and delivery within the published timeline per service. Weekly reporting in GHL. No status meetings that don't ship work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">02 · Services</div>
+      <h2>Every piece of the engine. <span class="accent">Á la carte or bundled.</span></h2>
+      <p class="lede">Click any service card to add it to your stack. A running summary appears at the bottom of the screen. When you're ready, we'll book a 15-minute call to confirm scope.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- FLAGSHIP — full bundle -->
+      <div class="service flagship" data-name="Location Growth Engine™" data-code="LGE">
+        <div class="service-top">
+          <div>
+            <div class="service-type">FLAGSHIP · FULL BUILD</div>
+          </div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>The Location Growth Engine<span class="tm">™</span></h3>
+        <div class="pitch">Every service on this page, built as <span class="accent">one integrated engine.</span> Demand, intake, conversion, and compounding — all on GoHighLevel + Claude. 90 days to first full cycle.</div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">90 DAYS</span></div>
+          <div>DELIVERABLES <span class="v">ALL 10 BELOW</span></div>
+          <div>PLATFORM <span class="v">GHL + CLAUDE</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>Every service below, integrated and deployed as a single compounding system</li>
+          <li>Weekly reporting dashboard to owner — speed-to-lead, booked inspections, close rate, review velocity, reactivation revenue</li>
+          <li>Full support through Day 90 with a documented handoff</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price"><s style="color: var(--ink-dim); font-weight: 500; text-decoration-color: var(--copper); text-decoration-thickness: 2px;">$7,000</s> <span style="color: var(--copper); font-weight: 700; font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; margin: 0 6px;">Setup waived</span><br><span style="font-size: 30px;">$2,000</span><small>/MO</small></div>
+          <div class="example-link">Best Value · 35% off à la carte →</div>
+        </div>
+      </div>
+
+      <!-- 01 LOCATION DIAGNOSTIC -->
+      <div class="service" data-name="Location Diagnostic™" data-code="LD">
+        <div class="service-top">
+          <div class="service-type">01 · Entry</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>The Location Diagnostic<span class="tm">™</span></h3>
+        <div class="pitch">10 days. Fixed fee. <span class="accent">The full audit.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">10 DAYS</span></div>
+          <div>FORMAT <span class="v">AUDIT + ROADMAP</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>Revenue-leak audit, quantified by channel and stage</li>
+          <li>90-day prioritized roadmap with owners &amp; deadlines</li>
+          <li>GHL + Claude system blueprint</li>
+          <li>Loom walkthrough for your operations team</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">$500</div>
+          <div class="example-link">Credits against any build →</div>
+        </div>
+      </div>
+
+      <!-- 02 BRAND IDENTITY -->
+      <div class="service" data-name="Brand Identity System" data-code="BI">
+        <div class="service-top">
+          <div class="service-type">02 · Positioning</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>Brand Identity System</h3>
+        <div class="pitch">Keep the logo. <span class="accent">Redesign the system around it.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">2 WEEKS</span></div>
+          <div>FORMAT <span class="v">VISUAL SYSTEM</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>Proposed palette + typography system</li>
+          <li>Before / after homepage comparison</li>
+          <li>6 headline rewrites in operator voice</li>
+          <li>9-element trust stack specification</li>
+          <li>Interactive HTML brand preview</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">$1,000</div>
+          <a href="brand-preview.html" target="_blank" class="example-link">See example →</a>
+        </div>
+      </div>
+
+      <!-- 03 WEBSITE REBUILD -->
+      <div class="service" data-name="Website Conversion Rebuild" data-code="WEB">
+        <div class="service-top">
+          <div class="service-type">03 · Conversion</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>Website Conversion Rebuild</h3>
+        <div class="pitch">Every element engineered <span class="accent">for close rate, not look.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">3–4 WEEKS</span></div>
+          <div>FORMAT <span class="v">LIVE SITE</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>New hero + operator promise above the fold</li>
+          <li>Live review bar, manufacturer badges, trust stack</li>
+          <li>Embedded GHL booking calendar</li>
+          <li>Mobile-first, sticky emergency bar, chat widget</li>
+          <li>Framework ready for city page expansion</li>
+          <li><strong style="color: var(--copper);">+ AI Intake Agent included (see #04)</strong></li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">$2,500</div>
+          <a href="site-mock.html" target="_blank" class="example-link">See example →</a>
+        </div>
+      </div>
+
+      <!-- 04 AI INTAKE -->
+      <div class="service" data-name="AI Intake Agent" data-code="AI">
+        <div class="service-top">
+          <div class="service-type">04 · Intake</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>AI Intake Agent (Claude + GHL)</h3>
+        <div class="pitch">Every lead qualified in 60 seconds. <span class="accent">24/7. Weekends included.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">2 WEEKS</span></div>
+          <div>FORMAT <span class="v">LIVE AGENT + WORKFLOWS</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>Claude agent configured for your qualification questions</li>
+          <li>SMS + chat + voicemail transcription channels</li>
+          <li>Missed-call text-back workflow</li>
+          <li>Auto-book to crew calendar with reminders</li>
+          <li>After-hours &amp; weekend routing</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price"><span style="color: var(--copper); font-weight: 700; font-size: 18px; letter-spacing: 0.05em;">INCLUDED</span><small style="display: block; margin-top: 4px; margin-left: 0;">WITH WEBSITE REBUILD (#03)</small></div>
+          <div class="example-link">Bundled into Conversion →</div>
+        </div>
+      </div>
+
+      <!-- 05 CONTENT ENGINE -->
+      <div class="service" data-name="Content Engine™" data-code="CE">
+        <div class="service-top">
+          <div class="service-type">05 · Demand</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>Content Engine<span class="tm">™</span></h3>
+        <div class="pitch">One piece. Six outputs. <span class="accent">Thirty minutes.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">ONGOING</span></div>
+          <div>FORMAT <span class="v">PLAN + PRODUCTION</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>5-pillar content strategy tied to engine layers</li>
+          <li>90-day editorial calendar with specific article titles</li>
+          <li>Claude-powered distribution cascade (1 → 6 outputs)</li>
+          <li>3 lead magnets including quiz + claim walk-through</li>
+          <li>Monthly performance review &amp; retrospective</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">$1,200<small>/MO</small></div>
+          <a href="content-plan.html" target="_blank" class="example-link">90-day plan sample →</a>
+        </div>
+      </div>
+
+      <!-- 06 REVIEW & REACTIVATION -->
+      <div class="service" data-name="Review + Reactivation Engine" data-code="RR">
+        <div class="service-top">
+          <div class="service-type">06 · Compounding</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>Review &amp; Reactivation Engine</h3>
+        <div class="pitch">Every install feeds the engine. <span class="accent">Every past customer gets mined.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">2 WEEKS + ONGOING</span></div>
+          <div>FORMAT <span class="v">GHL WORKFLOWS</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>Post-install review workflow (SMS + email, Google deep link, NPS branch)</li>
+          <li>5-touch annual reactivation across your full database</li>
+          <li>Referral engine with tracked links + $200 incentive</li>
+          <li>Response templates + owner-approval flow</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">$1,000<small>/MO</small></div>
+          <div class="example-link">Mine your database →</div>
+        </div>
+      </div>
+
+      <!-- 07 CITY PAGES -->
+      <div class="service" data-name="City Page SEO System" data-code="SEO">
+        <div class="service-top">
+          <div class="service-type">07 · Demand</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>City Page SEO System</h3>
+        <div class="pitch">Twelve cities. <span class="accent">Twelve rankings.</span> One compounding asset.</div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">3 WEEKS</span></div>
+          <div>FORMAT <span class="v">12 LIVE PAGES</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>12 programmatic city landing pages with local schema</li>
+          <li>LocalBusiness structured data + city-specific FAQs</li>
+          <li>Local review integration + GBP tie-in per city</li>
+          <li>City-specific CTAs, maps, permitting notes, hail history</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">$500<small>/MO</small></div>
+          <div class="example-link">Rank where leads are →</div>
+        </div>
+      </div>
+
+      <!-- 08 AD CREATIVE -->
+      <div class="service" data-name="Ad Creative Pack" data-code="AD">
+        <div class="service-top">
+          <div class="service-type">08 · Acquisition</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>Ad Creative Pack</h3>
+        <div class="pitch">Meta. Google. Display. <span class="accent">Built to convert, not to look good in a portfolio.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">2 WEEKS</span></div>
+          <div>FORMAT <span class="v">5-ASSET PACK</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>Meta 9:16 story + 1:1 feed ad variants</li>
+          <li>Google RSA headlines + descriptions (15 / 4)</li>
+          <li>Google Display banner set</li>
+          <li>System-in-motion creative — ad → landing → SMS → booked</li>
+          <li>Message testing framework for iteration</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">$500<small>/MO</small></div>
+          <a href="ad-pack.html" target="_blank" class="example-link">See 5-asset pack →</a>
+        </div>
+      </div>
+
+      <!-- 09 STORM SYSTEM -->
+      <div class="service" data-name="Storm/Event Response System" data-code="ST">
+        <div class="service-top">
+          <div class="service-type">09 · Trigger</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>Storm / Event Response System</h3>
+        <div class="pitch">24-hour activation on trigger events. <span class="accent">Claim demand before the storm-chasers park.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">2 WEEKS</span></div>
+          <div>FORMAT <span class="v">PRE-WIRED FUNNEL</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>Pre-built storm response landing page</li>
+          <li>NOAA-triggered paid campaign (Meta + Google)</li>
+          <li>SMS blast to past customers in impact zone</li>
+          <li>24/7 emergency intake routing via Claude</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">$500<small>/MO</small></div>
+          <div class="example-link">Own the storm →</div>
+        </div>
+      </div>
+
+      <!-- 10 MULTI-LOCATION OS -->
+      <div class="service" data-name="Multi-Location Operating System™" data-code="MLOS">
+        <div class="service-top">
+          <div class="service-type">10 · Scale</div>
+          <div class="check-box"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"/></svg></div>
+        </div>
+        <h3>Multi-Location Operating System<span class="tm">™</span></h3>
+        <div class="pitch">Location 1 built. Location 2 replicated. <span class="accent">Location 12 compounding.</span></div>
+        <div class="divider"></div>
+        <div class="spec-row">
+          <div>TIMELINE <span class="v">CUSTOM</span></div>
+          <div>FORMAT <span class="v">STANDARDIZED STACK</span></div>
+        </div>
+        <ul class="deliverables">
+          <li>Standardized GHL build — replicable across locations</li>
+          <li>Location-level reporting rollup to HQ dashboard</li>
+          <li>Franchise / DSO-ready operator playbook</li>
+          <li>New-location go-live SOP in under 14 days</li>
+        </ul>
+        <div class="service-bottom">
+          <div class="price">Custom</div>
+          <div class="example-link">For 3+ locations →</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ASSET GALLERY -->
+<section id="gallery" style="background: linear-gradient(180deg, var(--obsidian) 0%, var(--slate) 100%);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">03 · What You Actually Get</div>
+      <h2>Real ads. Real assets. <span class="accent">Side by side.</span></h2>
+      <p class="lede">Every ad below was generated by Grwthly's stack and branded for a real DFW client. Yours will look like this with your logo, your numbers, and your service area. Filter by category to see what each service ships.</p>
+    </div>
+
+    <div class="gallery-sticky-head">
+      <div class="gallery-filters" id="galleryFilters">
+        <button class="filter-chip active" data-filter="all">ALL</button>
+        <button class="filter-chip" data-filter="ads">META + GOOGLE ADS</button>
+        <button class="filter-chip" data-filter="site">WEBSITE</button>
+        <button class="filter-chip" data-filter="content">CONTENT + EMAIL</button>
+        <button class="filter-chip" data-filter="brand">BRAND</button>
+        <button class="filter-chip" data-filter="strategy">STRATEGY</button>
+      </div>
+    </div>
+
+        <div class="hifi-grid" id="galleryGrid">
+
+      <!-- META STORY 9:16 -->
+      <div class="hifi-card asset-preview" data-cat="ads">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>Storm-triggered · Live</div>
+          <div class="hifi-dim">1080 × 1920 · 9:16</div>
+          <div class="iphone">
+            <div class="iphone-screen">
+              <div class="iphone-notch"></div>
+              <div class="iphone-status">
+                <span>9:41</span>
+                <div class="status-icons"><span>●●●</span><span>📶</span><span>🔋</span></div>
+              </div>
+              <div class="story-ad">
+                <div>
+                  <div class="brand-row">
+                    <span>ROOFBOYS<span class="dot">.</span></span>
+                    <span class="meta-line">Sponsored</span>
+                  </div>
+                  <div class="progress"><span></span><span></span><span></span></div>
+                </div>
+                <div class="body-s">
+                  <div class="alert">Hail alert · Frisco 75034</div>
+                  <div class="head-s">Hail just hit Frisco.</div>
+                  <div class="sub-s"><strong>22-minute inspection.</strong> Same-day quote. In-house crews — never subcontracted.</div>
+                  <div class="cta-s"><span>Book Inspection</span><span>→</span></div>
+                  <div class="trust-s"><span class="stars">★★★★★</span><span>4.9 · 217 reviews · GAF Master Elite</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Meta · Story · 9:16</div>
+          <h4>Storm-Triggered Vertical Ad</h4>
+          <p>Activates within 24 hours of a NOAA hail event in your service area. Runs on Meta + Instagram Stories during the peak claim window.</p>
+        </div>
+      </div>
+
+      <!-- META SQUARE 1:1 -->
+      <div class="hifi-card asset-preview" data-cat="ads">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>Evergreen · Always-on</div>
+          <div class="hifi-dim">1080 × 1080 · 1:1</div>
+          <div class="square-ad">
+            <div class="top">
+              <div class="br">ROOFBOYS<span class="dot">.</span></div>
+              <div class="mt">DFW · EST 2011</div>
+            </div>
+            <div class="eb">The 22-min promise</div>
+            <h5>The only DFW roofer that <em>guarantees</em> a 22-minute inspection — or <span class="copper">we pay you $100.</span></h5>
+            <div class="chips">
+              <span class="chip-s">IN-HOUSE CREWS</span>
+              <span class="chip-s">LIFETIME WARRANTY</span>
+              <span class="chip-s">217 REVIEWS</span>
+            </div>
+            <div class="row">
+              <div class="cta-q">Book Yours →</div>
+              <div class="city">Dallas · Plano<br>Frisco · Allen</div>
+            </div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Meta · Feed · 1:1</div>
+          <h4>Trust-Led Evergreen Ad</h4>
+          <p>The accountable promise — a number, a window, a consequence. Carries cost-per-lead on its own, no storm tailwind required.</p>
+        </div>
+      </div>
+
+      <!-- GOOGLE SERP -->
+      <div class="hifi-card asset-preview" data-cat="ads" style="grid-column: 1 / -1;">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>Google Search · Sponsored</div>
+          <div class="hifi-dim">RSA · 15 HEADLINES / 4 DESC</div>
+          <div class="serp">
+            <div class="top">
+              <div class="gtitle"><span class="b">G</span><span class="r">o</span><span class="y">o</span><span class="b">g</span><span class="g">l</span><span class="r">e</span></div>
+              <div class="input">roof repair frisco tx</div>
+            </div>
+            <div>
+              <span class="ad-tag">Sponsored</span>
+              <div class="url">www.roofboysrestores.com</div>
+              <h5>Roofboys Roofing — DFW's 22-Minute Inspection</h5>
+              <div class="desc">In-house crews. Same-day quotes. Lifetime warranty. 217 five-star Google reviews across Dallas, Plano, Frisco. Licensed Texas roofing contractor since 2011.</div>
+              <div class="sitelinks">
+                <div class="sitelink">› Storm Damage</div>
+                <div class="sitelink">› Residential Roofing</div>
+                <div class="sitelink">› Insurance Claims</div>
+                <div class="sitelink">› Free Inspection</div>
+              </div>
+              <div class="stars-row"><span class="s">★★★★★</span> 4.9 (217) · <strong>Open</strong> · 22-minute inspection guaranteed</div>
+            </div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Google Search · Responsive Search Ad</div>
+          <h4>High-Intent Search Result</h4>
+          <p>Captures the moment a homeowner is actively searching. RSA optimized with 15 headlines and 4 descriptions tested against each other automatically.</p>
+        </div>
+      </div>
+
+      <!-- DISPLAY BANNER -->
+      <div class="hifi-card asset-preview" data-cat="ads" style="grid-column: 1 / -1;">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>Display · Retargeting</div>
+          <div class="hifi-dim">728 × 90 · LEADERBOARD</div>
+          <div class="display-banner">
+            <div class="left">
+              <div class="br">ROOFBOYS<span class="dot">.</span></div>
+              <div class="lic">TX LIC #XXXXX</div>
+            </div>
+            <div class="copy">Storm hit your neighborhood? <em>We're on-site in 24 hours.</em></div>
+            <div class="b-cta">Call Now →</div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Google Display · Retargeting Banner</div>
+          <h4>Retargeting Banner</h4>
+          <p>Catches every visitor who left without converting. Runs across the Google Display Network with storm-season variants automatically swapped in during hail events.</p>
+        </div>
+      </div>
+
+      <!-- GBP POST -->
+      <div class="hifi-card asset-preview" data-cat="ads">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>GBP · Weekly</div>
+          <div class="hifi-dim">GOOGLE BUSINESS POST</div>
+          <div class="gbp-post">
+            <div class="head-g">
+              <div class="avatar">R</div>
+              <div>
+                <div class="name">Roofboys Roofing</div>
+                <div class="when">2 days ago · Lewisville, TX</div>
+              </div>
+            </div>
+            <div class="image"><span class="pill">● HAIL UPDATE</span></div>
+            <div class="body-g">
+              <strong>Frisco hailstorm — Apr 22:</strong> 1.5" stones across 75034. We responded to 17 inspections in 48 hours. Free claim walk-throughs available all week.
+            </div>
+            <div class="cta-g">Book inspection →</div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">GBP · Weekly Post</div>
+          <h4>Google Business Profile Post</h4>
+          <p>Posted weekly to drive local rank and signal active operations. Auto-generated by Claude from your latest install or storm event.</p>
+        </div>
+      </div>
+
+      <!-- EMAIL NEWSLETTER -->
+      <div class="hifi-card asset-preview" data-cat="content">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>Email · Reactivation</div>
+          <div class="hifi-dim">5-TOUCH ANNUAL SEQUENCE</div>
+          <div class="email-card">
+            <div class="from-row">From: <strong>Roofboys</strong> · To: 2,047 contacts</div>
+            <div class="subj">Your roof's 5-year mark is coming up.</div>
+            <div class="pre">Hi David — quick check-in. The roof we installed in May 2021 has now seen 4 hail seasons...</div>
+            <div class="body-e">
+              <div class="eb">ANNUAL ROOF CHECK · APR 2026</div>
+              <h6>Your <em>5-year storm check</em> is on us.</h6>
+              <p>Free inspection, photo report, and an updated insurance scope — no obligation. Tap below to book the slot near you.</p>
+              <div class="b-mini">Book Your Free Check →</div>
+            </div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Email · 5-Touch Sequence</div>
+          <h4>Reactivation Email</h4>
+          <p>One of five annual touches that mine your past-customer database. Personalized at the contact level via GHL + Claude.</p>
+        </div>
+      </div>
+
+      <!-- SITE HERO -->
+      <div class="hifi-card asset-preview" data-cat="site" style="grid-column: 1 / -1;">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>Live Site · Hero</div>
+          <div class="hifi-dim">DESKTOP · 1440PX</div>
+          <div class="site-mock">
+            <div class="browser">
+              <div class="dots-r"><span></span><span></span><span></span></div>
+              <div class="url-bar">roofboys.com</div>
+            </div>
+            <div class="nav-mock">
+              <div class="br">ROOFBOYS<span class="dot">.</span></div>
+              <div class="links"><span>SERVICES</span><span>STORM DAMAGE</span><span>GALLERY</span><span>ABOUT</span></div>
+              <div class="cta-mini">FREE INSPECTION</div>
+            </div>
+            <div class="hero-mock">
+              <div class="eb">DFW Roofing · Operator-Level</div>
+              <div class="head-h">The roofer DFW homeowners pick when they <em>don't want to gamble.</em></div>
+              <div class="sub">2,000 roofs. 15 years. Zero subcontractors — ever. 22-minute inspection or we pay you $100.</div>
+              <div class="row">
+                <span class="b-p">Book My Inspection →</span>
+                <span class="b-s">Storm Damage? Tap Here</span>
+              </div>
+              <div class="trust">
+                <span class="stars-h">★★★★★</span>
+                <span>4.9 · 217 GOOGLE REVIEWS</span><span>·</span>
+                <span>GAF MASTER ELITE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Live Site · Homepage</div>
+          <h4>Conversion-Engineered Homepage</h4>
+          <p>Operator promise above fold. Live review bar. Manufacturer badges. Embedded booking. Mobile-first with sticky emergency bar. Deployable in 3 weeks.</p>
+        </div>
+      </div>
+
+      <!-- SYSTEM IN MOTION -->
+      <div class="hifi-card asset-preview" data-cat="ads" style="grid-column: 1 / -1;">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>System In Motion · Under 60 Seconds</div>
+          <div class="hifi-dim">AD → SITE → CLAUDE → BOOKED</div>
+          <div class="flow">
+            <div class="flow-step s1">
+              <div class="scr">
+                <div class="lt">HAIL ALERT</div>
+                <div class="ht">Hail just hit<br>Frisco.</div>
+                <div class="btn-tiny">Book Inspection</div>
+              </div>
+            </div>
+            <div class="flow-arrow">→<div class="lab">CLICK</div></div>
+            <div class="flow-step s2">
+              <div class="scr">
+                <div class="lt-brand">ROOFBOYS<span class="d">.</span></div>
+                <div class="ht">22-min inspection.</div>
+                <div style="font-size: 6px; color: var(--ink-dim); line-height: 1.4;">Same-day quote. No subs.</div>
+                <div class="btn-tiny">Book Yours</div>
+              </div>
+            </div>
+            <div class="flow-arrow">→<div class="lab">FORM</div></div>
+            <div class="flow-step s3">
+              <div class="scr">
+                <div class="lt">SMS · CLAUDE AI</div>
+                <div class="sms">Got it, David. What's the address?</div>
+                <div class="sms out">15 Oak Ln, Frisco</div>
+                <div class="sms">Thanks. Tomorrow 10am work?</div>
+              </div>
+            </div>
+            <div class="flow-arrow">→<div class="lab">BOOKED</div></div>
+            <div class="flow-step s4">
+              <div class="scr">
+                <div class="lt">CONFIRMED</div>
+                <div class="check">✓</div>
+                <div class="ht">Inspected:<br>Tomorrow 10am</div>
+                <div class="det">Crew: Marcus<br>Frisco · 75034</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Funnel · End-to-End</div>
+          <h4>Ad → Site → Claude AI → Booked Inspection</h4>
+          <p>Total elapsed time: under 60 seconds. The full path a DFW homeowner travels from a Meta ad to a confirmed inspection. 24/7. Zero human involvement until the crew arrives.</p>
+        </div>
+      </div>
+
+      <!-- BRIEF PDF -->
+      <div class="hifi-card asset-preview" data-cat="strategy">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>Diagnostic · 11-Page PDF</div>
+          <div class="hifi-dim">CLIENT-FACING DELIVERABLE</div>
+          <div class="brief-mock">
+            <div class="top-b">
+              <span>GRWTHLY</span><span class="x">×</span><span>CLIENT</span>
+            </div>
+            <div class="eb-b">OPPORTUNITY BRIEF</div>
+            <div class="title-b">Engineered for the <em>DFW market.</em></div>
+            <div class="num-big">$1.2M – $2.6M</div>
+            <div class="num-sub">REVENUE AT RISK · ANNUAL</div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Diagnostic · Premium PDF</div>
+          <h4>The Opportunity Brief</h4>
+          <p>11-page client-facing diagnosis. Four leaks quantified. 90-day roadmap. Premium document with full-bleed dark cover. Ready to send the same hour we deliver it.</p>
+        </div>
+      </div>
+
+      <!-- BRAND PALETTE + TYPE -->
+      <div class="hifi-card asset-preview" data-cat="brand">
+        <div class="hifi-stage">
+          <div class="hifi-tag"><span class="dot"></span>Brand System · Visual Preview</div>
+          <div class="hifi-dim">PALETTE + TYPOGRAPHY</div>
+          <div class="brand-mock">
+            <div class="row-bm">
+              <div class="swatch-b s1">OBSIDIAN</div>
+              <div class="swatch-b s3">COPPER</div>
+            </div>
+            <div class="row-bm">
+              <div class="swatch-b s2">GRAPHITE</div>
+              <div class="swatch-b s4">BONE</div>
+            </div>
+            <div class="row-bm">
+              <div class="swatch-b s5">PEWTER</div>
+              <div class="swatch-b s6">PULSE</div>
+            </div>
+            <div class="typo">
+              <div class="l">TYPE STACK</div>
+              <div class="ts">Display Inter</div>
+              <div class="tf">Editorial Fraunces</div>
+              <div class="tm">UTILITY MONO</div>
+            </div>
+          </div>
+        </div>
+        <div class="hifi-info">
+          <div class="type">Brand · System Preview</div>
+          <h4>Palette + Typography</h4>
+          <p>Locked color tokens, three-typeface system, before/after homepage comparison, and 6 messaging rewrites in operator voice.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">04 · How It Ships</div>
+      <h2>Fixed timeline. <span class="accent">No surprises.</span></h2>
+      <p class="lede">Every service has a published delivery cadence. You know what ships on Week 1, Week 4, and Day 90. No mystery, no "we'll circle back."</p>
+    </div>
+
+    <div class="timeline-rail">
+      <div class="timeline-node">
+        <div class="dot"></div>
+        <div class="w">Day 01 — 03</div>
+        <h4>Kickoff</h4>
+        <p>15-minute scope call. SOW signed. Access provisioned. Project channel opened.</p>
+      </div>
+      <div class="timeline-node">
+        <div class="dot"></div>
+        <div class="w">Week 01 — 02</div>
+        <h4>Foundation</h4>
+        <p>Core infrastructure stood up. First deliverables shipped. Weekly update live in GHL dashboard.</p>
+      </div>
+      <div class="timeline-node">
+        <div class="dot"></div>
+        <div class="w">Week 03 — 08</div>
+        <h4>Build &amp; Activate</h4>
+        <p>Full system deployed. Automations running. First measurable outcomes recorded.</p>
+      </div>
+      <div class="timeline-node">
+        <div class="dot"></div>
+        <div class="w">Week 09 — 12</div>
+        <h4>Compounding</h4>
+        <p>Review retrospective. Handoff documented. Ongoing support or closure call booked.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">05 · Questions</div>
+      <h2>What most operators <span class="accent">ask first.</span></h2>
+    </div>
+
+    <div class="faq-wrap">
+      <details class="faq-item" open>
+        <summary>Can I pick just one service, or do I have to commit to the full engine?</summary>
+        <div class="a">Every service on this page is available à la carte. The Location Growth Engine™ bundles all of them at roughly 35% off the combined à la carte rate, but a single-service engagement is completely valid — we ship it on the same fixed timeline.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How is pricing structured? Retainer, hourly, fixed fee?</summary>
+        <div class="a">Every service is fixed-fee per scope. Ongoing pieces (Content Engine, Review + Reactivation) have a setup fee plus a flat monthly. No hourly. No percentage of ad spend. No surprise invoices.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work with clients outside multi-location service brands?</summary>
+        <div class="a">Occasionally, but reluctantly. The stack and framework are engineered specifically for multi-location service businesses — med spas, DSOs, HVAC, home services, law firm groups, fitness franchises. Single-location businesses with plans to scale are on-ramp clients; everyone else gets politely redirected.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What if I already have a CRM or website?</summary>
+        <div class="a">We plug in. The AI Intake Agent and Review Engine can layer onto most CRMs (HubSpot, Salesforce, Jobber, Housecall Pro, Keap) though GHL is where the stack runs most cleanly. If your site is already strong, we can skip the rebuild and focus on intake + content + compounding.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Who actually builds the work? Is this outsourced?</summary>
+        <div class="a">Every deliverable is built in-house by Grwthly. No offshore content mills, no white-label agency partnerships, no subcontracted code. The operator who quotes is the operator who builds.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What happens after Day 90 on the full Growth Engine?</summary>
+        <div class="a">You either continue on an ongoing cadence (paid monthly, month-to-month, cancel anytime) or you take the keys and run the system internally. Full documentation and a recorded walkthrough are part of handoff.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="book">
+  <div class="wrap">
+    <div class="final">
+      <div class="tag">The Next Step · For Roofboys</div>
+      <h2>Selected your stack? <span class="accent">Let's scope it.</span></h2>
+      <p>15-minute call. No pitch. No deck. We confirm scope, pricing, and timeline — then you get a Roofboys-specific SOW the same day. If the fit is wrong, we'll say so.</p>
+      <div class="cta-row">
+        <a href="mailto:Mguzman423@yahoo.com?subject=Roofboys%20×%20Grwthly%20—%20Service%20Selection&amp;body=Hi%20Martin%20—%20I'd%20like%20to%20scope%20the%20following%20services%20from%20the%20preview:%0A%0A1.%20%0A2.%20%0A3.%20%0A%0AAvailable%20to%20chat:%20" class="btn btn-p">Book a 15-Min Call</a>
+        <a href="#services" class="btn btn-s">Back to Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="brand-col">
+        <div class="logo" style="font-size: 20px; margin-bottom: 18px;">GRWTHLY<span class="dot">.</span></div>
+        <p>The AI Growth Operator for multi-location service brands. Built on GoHighLevel + Claude. Every deliverable engineered for compounding outcomes, not vanity metrics.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Location Diagnostic™</a></li>
+          <li><a href="#services">Brand Identity</a></li>
+          <li><a href="#services">Website Rebuild</a></li>
+          <li><a href="#services">AI Intake Agent</a></li>
+          <li><a href="#services">Content Engine™</a></li>
+          <li><a href="#services">Ad Creative Pack</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Engine</h5>
+        <ul>
+          <li><a href="#services">Location Growth Engine™</a></li>
+          <li><a href="#services">Multi-Location OS™</a></li>
+          <li><a href="#services">Review Engine</a></li>
+          <li><a href="#services">Storm Response</a></li>
+          <li><a href="#services">City Page SEO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:Mguzman423@yahoo.com">Mguzman423@yahoo.com</a></li>
+          <li><a href="#book">Book a 15-min call</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 GRWTHLY · AI GROWTH OPERATOR · MARTIN GUZMAN</div>
+      <div>BUILT ON GHL + CLAUDE · FOR MULTI-LOCATION SERVICE BRANDS</div>
+    </div>
+  </div>
+</footer>
+
+<!-- STACK BUILDER BAR -->
+<div class="stack-bar" id="stackBar">
+  <div class="stack-info">
+    <div>
+      <div class="count" id="stackCount">0</div>
+      <div class="count-label">services<br><strong>selected</strong></div>
+    </div>
+    <div class="stack-preview" id="stackPreview"></div>
+  </div>
+  <div style="display: flex; gap: 16px; align-items: center;">
+    <button class="clear" id="stackClear">Clear</button>
+    <a href="#book" class="stack-cta" id="stackCta">Book a Call to Scope →</a>
+  </div>
+</div>
+
+<script>
+  // Service selection
+  const services = document.querySelectorAll('.service');
+  const stackBar = document.getElementById('stackBar');
+  const stackCount = document.getElementById('stackCount');
+  const stackPreview = document.getElementById('stackPreview');
+  const stackClear = document.getElementById('stackClear');
+  let selected = new Set();
+
+  function updateStack() {
+    stackCount.textContent = selected.size;
+    if (selected.size > 0) {
+      stackBar.classList.add('active');
+    } else {
+      stackBar.classList.remove('active');
+    }
+    const names = Array.from(selected).slice(0, 4);
+    stackPreview.innerHTML = names.map(n => `<span class="stack-chip">${n}</span>`).join('') +
+      (selected.size > 4 ? `<span class="stack-chip">+${selected.size - 4}</span>` : '');
+  }
+
+  services.forEach(service => {
+    service.addEventListener('click', (e) => {
+      if (e.target.closest('a')) return;
+      const name = service.dataset.code;
+      const displayName = service.dataset.name;
+      if (selected.has(displayName)) {
+        selected.delete(displayName);
+        service.classList.remove('selected');
+      } else {
+        selected.add(displayName);
+        service.classList.add('selected');
+      }
+      updateStack();
+    });
+  });
+
+  stackClear.addEventListener('click', () => {
+    selected.clear();
+    services.forEach(s => s.classList.remove('selected'));
+    updateStack();
+  });
+
+  // Gallery filter
+  const filters = document.querySelectorAll('.filter-chip');
+  const previews = document.querySelectorAll('.asset-preview');
+  filters.forEach(f => {
+    f.addEventListener('click', () => {
+      filters.forEach(x => x.classList.remove('active'));
+      f.classList.add('active');
+      const filter = f.dataset.filter;
+      previews.forEach(p => {
+        p.style.display = (filter === 'all' || p.dataset.cat === filter) ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

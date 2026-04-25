@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roofboys — DFW Roofing Done Right</title>
+<meta name="description" content="Roofboys Roofing & Construction — DFW's operator-level roofer. 22-minute inspections, same-day quotes, in-house crews, lifetime workmanship warranty. Serving Dallas, Plano, Frisco, and all of DFW since 2011.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --slate: #14171C;
+    --slate-2: #1B1F25;
+    --graphite: #2A2F37;
+    --bone: #F5F2EC;
+    --bone-2: #FAF8F3;
+    --ink: #1A1D22;
+    --ink-dim: #6B7280;
+    --copper: #C8521C;
+    --copper-deep: #9E3D11;
+    --copper-light: #E8742F;
+    --mint: #5FB88C;
+    --line: #E5E1D6;
+    --line-dark: rgba(245, 242, 236, 0.1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bone-2);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 32px; }
+
+  /* ========== TOP ANNOUNCEMENT BAR ========== */
+  .announce {
+    background: var(--slate);
+    color: var(--bone);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--line-dark);
+  }
+  .announce .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--mint);
+    margin-right: 8px;
+    box-shadow: 0 0 8px var(--mint);
+    vertical-align: middle;
+  }
+
+  /* ========== NAVIGATION ========== */
+  nav.main {
+    background: var(--slate);
+    color: var(--bone);
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--line-dark);
+  }
+  nav.main .wrap { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+
+  .logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    color: var(--bone);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo .brand-mark {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+  .logo .est {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-dim);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-left: 1px solid var(--line-dark);
+    padding-left: 10px;
+    margin-left: 4px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--bone);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--copper-light); }
+
+  .nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .nav-phone {
+    color: var(--bone);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-phone svg { width: 16px; height: 16px; }
+  .btn-primary {
+    background: var(--copper);
+    color: var(--bone);
+    padding: 12px 22px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: background 0.2s;
+    letter-spacing: -0.005em;
+  }
+  .btn-primary:hover { background: var(--copper-deep); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink);
+    padding: 12px 22px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1.5px solid var(--ink);
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: var(--ink); color: var(--bone); }
+  .btn-ghost-dark {
+    background: transparent;
+    color: var(--bone);
+    padding: 12px 22px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1.5px solid rgba(245, 242, 236, 0.25);
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  .btn-ghost-dark:hover { border-color: var(--bone); background: rgba(245, 242, 236, 0.08); }
+
+  /* ========== HERO ========== */
+  .hero {
+    background: var(--slate);
+    color: var(--bone);
+    padding: 80px 0 120px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 85% 20%, rgba(200, 82, 28, 0.12) 0%, transparent 45%),
+      linear-gradient(180deg, var(--slate) 0%, #0A0D12 100%);
+    z-index: 0;
+  }
+  .hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 60px; align-items: center; }
+
+  .hero .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    padding: 8px 14px;
+    border: 1px solid rgba(200, 82, 28, 0.3);
+    border-radius: 20px;
+    margin-bottom: 28px;
+  }
+  .hero .eyebrow::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--mint);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--mint);
+  }
+  .hero h1 {
+    font-size: 68px;
+    line-height: 1.02;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    margin-bottom: 24px;
+    color: var(--bone);
+  }
+  .hero h1 .accent { color: var(--copper-light); }
+  .hero .lede {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(245, 242, 236, 0.72);
+    max-width: 560px;
+    margin-bottom: 36px;
+  }
+  .hero .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 32px; }
+  .hero .cta-row .btn-primary { padding: 16px 28px; font-size: 15px; }
+  .hero .cta-row .btn-ghost-dark { padding: 16px 28px; font-size: 15px; }
+
+  .trust-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line-dark);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(245, 242, 236, 0.6);
+    flex-wrap: wrap;
+  }
+  .trust-bar .stars { color: #FFB347; letter-spacing: 1px; font-size: 14px; }
+  .trust-bar .divider { opacity: 0.3; }
+
+  /* Hero right — proof stack */
+  .proof-card {
+    background: var(--slate-2);
+    border: 1px solid var(--line-dark);
+    border-radius: 8px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+  }
+  .proof-card .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    margin-bottom: 20px;
+  }
+  .proof-card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    color: var(--bone);
+  }
+  .proof-card .promise-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .proof-card .promise-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: 15px;
+    color: rgba(245, 242, 236, 0.85);
+    line-height: 1.5;
+  }
+  .proof-card .promise-list li::before {
+    content: '→';
+    color: var(--copper-light);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .proof-card .guarantee {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line-dark);
+    font-size: 13px;
+    color: rgba(245, 242, 236, 0.55);
+    font-style: italic;
+  }
+
+  /* ========== BADGE STRIP ========== */
+  .badges {
+    background: var(--bone);
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .badges .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .badges .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .badges .items {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .badge-item {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.75;
+  }
+  .badge-item .dot {
+    width: 8px; height: 8px;
+    background: var(--copper);
+    border-radius: 50%;
+  }
+
+  /* ========== BY THE NUMBERS ========== */
+  section { padding: 100px 0; }
+  section.alt { background: var(--bone); }
+
+  .section-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--ink);
+    font-variation-settings: "opsz" 144;
+  }
+  .section-title .accent { color: var(--copper); font-style: italic; }
+  .section-lede {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--ink-dim);
+    max-width: 680px;
+    margin-bottom: 56px;
+  }
+
+  .numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .number-card {
+    background: var(--bone-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 40px 36px;
+    text-align: left;
+  }
+  section.alt .number-card { background: #fff; }
+  .number-card .big {
+    font-family: 'Inter', sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .number-card .big .unit { color: var(--copper); }
+  .number-card .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 14px;
+  }
+  .number-card .desc {
+    font-size: 15px;
+    color: var(--ink-dim);
+    line-height: 1.55;
+  }
+
+  /* ========== SERVICES ========== */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .service-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 36px 32px;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .service-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--copper);
+    box-shadow: 0 12px 40px rgba(20, 23, 28, 0.08);
+  }
+  .service-card .ico {
+    width: 44px; height: 44px;
+    background: rgba(200, 82, 28, 0.08);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--copper);
+  }
+  .service-card .ico svg { width: 22px; height: 22px; }
+  .service-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+  .service-card p {
+    font-size: 14.5px;
+    color: var(--ink-dim);
+    line-height: 1.55;
+  }
+  .service-card .learn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-top: auto;
+    padding-top: 12px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* ========== THE PROMISE (operator guarantee) ========== */
+  .promise-block {
+    background: var(--slate);
+    color: var(--bone);
+    border-radius: 12px;
+    padding: 72px 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .promise-block::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(200, 82, 28, 0.12) 0%, transparent 70%);
+    z-index: 0;
+  }
+  .promise-block > * { position: relative; z-index: 1; }
+  .promise-block .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+    margin-bottom: 18px;
+  }
+  .promise-block h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .promise-block h2 .accent { color: var(--copper-light); }
+  .promise-block p {
+    font-size: 17px;
+    color: rgba(245, 242, 236, 0.72);
+    line-height: 1.6;
+  }
+  .promise-pillars {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .pillar {
+    display: flex;
+    gap: 20px;
+    padding: 22px 24px;
+    background: rgba(245, 242, 236, 0.04);
+    border-left: 3px solid var(--copper);
+    border-radius: 4px;
+  }
+  .pillar .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--copper-light);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    min-width: 30px;
+    padding-top: 3px;
+    font-weight: 600;
+  }
+  .pillar h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--bone);
+  }
+  .pillar p {
+    font-size: 14px;
+    color: rgba(245, 242, 236, 0.65);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ========== STORM RESPONSE ========== */
+  .storm-block {
+    background: linear-gradient(135deg, #0A0D12 0%, #1A1F28 100%);
+    border-radius: 12px;
+    padding: 56px;
+    color: var(--bone);
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .storm-block::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 70% 30%, rgba(200, 82, 28, 0.15) 0%, transparent 40%),
+      linear-gradient(180deg, transparent 0%, rgba(10, 13, 18, 0.4) 100%);
+    z-index: 0;
+  }
+  .storm-block > * { position: relative; z-index: 1; }
+  .storm-block .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(200, 82, 28, 0.15);
+    color: var(--copper-light);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 24px;
+    border: 1px solid rgba(200, 82, 28, 0.3);
+  }
+  .storm-block .pill::before {
+    content: '';
+    width: 8px; height: 8px;
+    background: var(--copper-light);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--copper-light);
+    animation: pulse 1.8s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.3); }
+  }
+  .storm-block h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    margin-bottom: 18px;
+  }
+  .storm-block p {
+    font-size: 17px;
+    color: rgba(245, 242, 236, 0.72);
+    line-height: 1.55;
+    margin-bottom: 28px;
+  }
+  .storm-block .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .storm-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .storm-fact {
+    padding: 20px 22px;
+    background: rgba(245, 242, 236, 0.04);
+    border: 1px solid var(--line-dark);
+    border-radius: 6px;
+  }
+  .storm-fact .n {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--copper-light);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .storm-fact .t {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(245, 242, 236, 0.55);
+  }
+
+  /* ========== TEAM ========== */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .team-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  .team-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(20, 23, 28, 0.08);
+  }
+  .team-photo {
+    aspect-ratio: 4/5;
+    background:
+      linear-gradient(180deg, transparent 0%, rgba(20,23,28,0.5) 100%),
+      linear-gradient(135deg, #3A4048 0%, #1E232A 100%);
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+  }
+  .team-photo .initials {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Fraunces', serif;
+    font-size: 120px;
+    color: rgba(245, 242, 236, 0.08);
+    font-weight: 600;
+    font-variation-settings: "opsz" 144;
+  }
+  .team-photo .name-block { position: relative; z-index: 1; color: var(--bone); }
+  .team-photo h4 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin-bottom: 4px;
+  }
+  .team-photo .role {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--copper-light);
+  }
+  .team-card .bio {
+    padding: 24px 28px;
+    font-size: 14.5px;
+    color: var(--ink-dim);
+    line-height: 1.55;
+  }
+
+  /* ========== REVIEWS ========== */
+  .reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .review-score {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 24px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+  .review-score .big {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .review-score .mid {
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .review-score .stars { color: #FFB347; font-size: 16px; letter-spacing: 2px; }
+  .review-score .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-dim);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .review-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .review-card .stars { color: #FFB347; font-size: 14px; letter-spacing: 1px; }
+  .review-card .quote {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--ink);
+    font-variation-settings: "opsz" 144;
+  }
+  .review-card .who {
+    font-size: 13px;
+    color: var(--ink-dim);
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .review-card .who strong { color: var(--ink); font-weight: 600; display: block; margin-bottom: 2px; font-size: 14px; }
+
+  /* ========== FAQ ========== */
+  .faq-wrap {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--line);
+    padding: 24px 0;
+  }
+  .faq-item summary {
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    color: var(--copper);
+    font-weight: 400;
+    transition: transform 0.2s;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item .a {
+    margin-top: 14px;
+    font-size: 15.5px;
+    color: var(--ink-dim);
+    line-height: 1.65;
+  }
+
+  /* ========== FINAL CTA ========== */
+  .final-cta {
+    background: var(--slate);
+    color: var(--bone);
+    border-radius: 12px;
+    padding: 80px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 30% 50%, rgba(200, 82, 28, 0.15) 0%, transparent 50%),
+      radial-gradient(circle at 70% 50%, rgba(200, 82, 28, 0.1) 0%, transparent 50%);
+  }
+  .final-cta > * { position: relative; z-index: 1; }
+  .final-cta h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+    font-variation-settings: "opsz" 144;
+  }
+  .final-cta h2 .accent { color: var(--copper-light); font-style: italic; }
+  .final-cta p {
+    font-size: 18px;
+    color: rgba(245, 242, 236, 0.7);
+    max-width: 560px;
+    margin: 0 auto 32px;
+    line-height: 1.55;
+  }
+  .final-cta .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .final-cta .btn-primary { padding: 18px 32px; font-size: 16px; }
+  .final-cta .btn-ghost-dark { padding: 18px 32px; font-size: 16px; }
+  .final-cta .meta {
+    margin-top: 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(245, 242, 236, 0.5);
+  }
+
+  /* ========== FOOTER ========== */
+  footer {
+    background: var(--slate);
+    color: rgba(245, 242, 236, 0.7);
+    padding: 72px 0 32px;
+    border-top: 1px solid var(--line-dark);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 56px;
+  }
+  footer h5 {
+    color: var(--bone);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  footer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  footer a { color: rgba(245, 242, 236, 0.6); text-decoration: none; font-size: 14.5px; transition: color 0.2s; }
+  footer a:hover { color: var(--copper-light); }
+  footer .brand-col p { font-size: 14.5px; line-height: 1.6; margin-bottom: 20px; color: rgba(245, 242, 236, 0.6); }
+  .footer-bottom {
+    border-top: 1px solid var(--line-dark);
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: rgba(245, 242, 236, 0.4);
+  }
+
+  /* ========== STICKY EMERGENCY BAR ========== */
+  .emergency-bar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--copper);
+    color: var(--bone);
+    padding: 12px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 50;
+    box-shadow: 0 12px 40px rgba(200, 82, 28, 0.4);
+  }
+  .emergency-bar .ico {
+    width: 32px; height: 32px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .emergency-bar .copy { font-size: 13px; line-height: 1.2; }
+  .emergency-bar .copy strong { font-family: 'JetBrains Mono', monospace; letter-spacing: 0.1em; font-size: 11px; display: block; margin-bottom: 2px; }
+  .emergency-bar .call-now {
+    background: var(--slate);
+    color: var(--bone);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+  }
+
+  /* ========== CHAT FAB ========== */
+  .chat-fab {
+    position: fixed;
+    bottom: 88px;
+    right: 24px;
+    width: 56px; height: 56px;
+    background: var(--slate);
+    color: var(--bone);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 28px rgba(20,23,28,0.25);
+    z-index: 50;
+    cursor: pointer;
+    border: 2px solid var(--copper);
+  }
+
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 960px) {
+    .hero .wrap,
+    .promise-block,
+    .storm-block { grid-template-columns: 1fr; gap: 40px; padding: 40px 28px; }
+    .hero h1 { font-size: 44px; }
+    .section-title { font-size: 36px; }
+    .numbers-grid,
+    .services-grid,
+    .team-grid,
+    .reviews-grid,
+    .footer-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .final-cta { padding: 56px 28px; }
+    .final-cta h2 { font-size: 36px; }
+    .emergency-bar { bottom: 12px; width: calc(100% - 24px); justify-content: space-between; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================ ANNOUNCEMENT ============================ -->
+<div class="announce">
+  <span class="dot"></span>
+  <strong>SERVING DFW SINCE 2011</strong>  ·  22-MINUTE INSPECTIONS  ·  SAME-DAY QUOTES  ·  IN-HOUSE CREWS
+</div>
+
+<!-- ============================ NAVIGATION ============================ -->
+<nav class="main">
+  <div class="wrap">
+    <a href="#" class="logo">
+      <span class="brand-mark">ROOFBOYS</span>
+      <span class="est">EST. 2011 · DFW</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#storm">Storm Damage</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#team">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:9725952411" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        972-595-2411
+      </a>
+      <a href="#book" class="btn-primary">Free Inspection</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">DFW Roofing · Operator-Level</span>
+      <h1>The roofer DFW homeowners pick when they <span class="accent">don't want to gamble.</span></h1>
+      <p class="lede">Two thousand roofs. Fifteen years. Zero subcontractors — ever. We engineer the entire job in-house, so you know who's on your roof and who backs the warranty.</p>
+      <div class="cta-row">
+        <a href="#book" class="btn-primary">Book Your 22-Minute Inspection</a>
+        <a href="#storm" class="btn-ghost-dark">Storm Damage? Tap Here</a>
+      </div>
+      <div class="trust-bar">
+        <span class="stars">★★★★★</span>
+        <span>4.9 · 217 Google Reviews</span>
+        <span class="divider">/</span>
+        <span>GAF Master Elite</span>
+        <span class="divider">/</span>
+        <span>Licensed &amp; Insured</span>
+      </div>
+    </div>
+
+    <!-- Proof card -->
+    <div class="proof-card">
+      <div class="label">The Roofboys Promise</div>
+      <h3>22-minute inspection. Same-day quote. Or we pay you $100.</h3>
+      <ul class="promise-list">
+        <li>You get a full roof inspection in 22 minutes or less — or the inspection is free.</li>
+        <li>A detailed quote hits your inbox the same day, with material specs and timeline.</li>
+        <li>Your job runs with in-house Roofboys crews — we never subcontract.</li>
+        <li>Backed by a lifetime workmanship warranty and 25–30 year material warranty.</li>
+      </ul>
+      <div class="guarantee">If we miss any of it, we pay you $100. Nobody else in DFW writes that in the quote.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ BADGES ============================ -->
+<div class="badges">
+  <div class="wrap">
+    <div class="label">Certified · Accredited · Backed</div>
+    <div class="items">
+      <span class="badge-item"><span class="dot"></span>GAF MASTER ELITE</span>
+      <span class="badge-item"><span class="dot"></span>OWENS CORNING PLATINUM</span>
+      <span class="badge-item"><span class="dot"></span>BBB A+ ACCREDITED</span>
+      <span class="badge-item"><span class="dot"></span>CERTAINTEED SELECT</span>
+      <span class="badge-item"><span class="dot"></span>LICENSED TX #XXXXX</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ BY THE NUMBERS ============================ -->
+<section class="alt">
+  <div class="wrap">
+    <span class="section-eyebrow">By The Numbers</span>
+    <h2 class="section-title">Fifteen years of operator-level DFW roofing — <span class="accent">measured, not marketed.</span></h2>
+    <p class="section-lede">Roofing is a trust business. These are the numbers that have earned it, one install at a time.</p>
+
+    <div class="numbers-grid">
+      <div class="number-card">
+        <div class="label">Years in DFW</div>
+        <div class="big">15<span class="unit">+</span></div>
+        <div class="desc">Established 2011, Lewisville HQ. Same operators on the roof and in the office.</div>
+      </div>
+      <div class="number-card">
+        <div class="label">Roofs Serviced</div>
+        <div class="big">2,047</div>
+        <div class="desc">Full replacements, repairs, and insurance claims across twelve DFW cities.</div>
+      </div>
+      <div class="number-card">
+        <div class="label">Google Reviews</div>
+        <div class="big">217 <span class="unit">★</span></div>
+        <div class="desc">4.9-star rating. Pulled live — never scrubbed, never incentivized, never fake.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section id="services">
+  <div class="wrap">
+    <span class="section-eyebrow">What We Do</span>
+    <h2 class="section-title">Four services. <span class="accent">Done right.</span></h2>
+    <p class="section-lede">We don't do gutters for the sake of gutters. Each of these exists because DFW homeowners and commercial operators have asked us to fix something real.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg></div>
+        <h3>Residential Replacement</h3>
+        <p>Full tear-off and replacement. One crew, one day, one price. Asphalt, architectural, metal, and luxury tile options.</p>
+        <a href="#" class="learn">See residential →</a>
+      </div>
+      <div class="service-card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 12h6M9 17h6"/></svg></div>
+        <h3>Commercial Roofing</h3>
+        <p>TPO, modified bitumen, and flat-roof systems for property managers, HOAs, and DFW-area commercial operators.</p>
+        <a href="#" class="learn">See commercial →</a>
+      </div>
+      <div class="service-card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l4 4h-3v14h-2V6H8l4-4z"/></svg></div>
+        <h3>Storm &amp; Hail Repair</h3>
+        <p>24/7 emergency response. Full insurance claim walk-through. We work with every major carrier in Texas.</p>
+        <a href="#storm" class="learn">Storm page →</a>
+      </div>
+      <div class="service-card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v12a3 3 0 0 0 6 0V6a3 3 0 0 1 6 0v15"/></svg></div>
+        <h3>Gutters &amp; Maintenance</h3>
+        <p>Seamless gutter install, leaf-guard systems, and annual maintenance plans for roofs already installed by Roofboys.</p>
+        <a href="#" class="learn">See gutters →</a>
+      </div>
+      <div class="service-card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Inspection &amp; Certification</h3>
+        <p>Pre-sale, post-storm, or annual inspections. Detailed photo reports and certification documents for resale and insurance.</p>
+        <a href="#" class="learn">Book inspection →</a>
+      </div>
+      <div class="service-card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+        <h3>Insurance Claim Support</h3>
+        <p>Claim walk-through, adjuster meeting on-site, photo documentation, scope review. We've filed with Allstate, State Farm, Farmers, and more.</p>
+        <a href="#" class="learn">Claim help →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ THE PROMISE ============================ -->
+<section class="alt" style="padding: 80px 0;">
+  <div class="wrap">
+    <div class="promise-block">
+      <div>
+        <div class="eyebrow">The Roofboys Promise</div>
+        <h2>Four lines. <span class="accent">Written into every quote.</span></h2>
+        <p>We put these in writing because we mean them. If any of the four fail, we pay you $100 — no argument, no asterisk. Most of DFW won't even guarantee showing up on time.</p>
+      </div>
+      <div class="promise-pillars">
+        <div class="pillar">
+          <div class="num">01</div>
+          <div><h4>22-Minute Inspection</h4><p>Full roof walk, photographed top to bottom. In your driveway on time.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="num">02</div>
+          <div><h4>Same-Day Quote</h4><p>Itemized, emailed, no pressure calls. Material specs, timeline, warranty — all inline.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="num">03</div>
+          <div><h4>In-House Crews Only</h4><p>We never subcontract. The crew that quotes is the crew that installs.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="num">04</div>
+          <div><h4>Lifetime Workmanship</h4><p>If we installed it, we warranty it. Forever. Transferable on resale.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STORM RESPONSE ============================ -->
+<section id="storm">
+  <div class="wrap">
+    <div class="storm-block">
+      <div>
+        <div class="pill">24/7 STORM RESPONSE LIVE</div>
+        <h2>Hail hit your neighborhood? We're on-site within 24 hours.</h2>
+        <p>DFW gets 4 to 7 major hail events a year. If you're in one, we respond within 24 hours with a full inspection, documented photo report, and a walk-through of your insurance claim — before the storm-chasers even park on your street.</p>
+        <div class="cta-row">
+          <a href="tel:9725952411" class="btn-primary">Call 972-595-2411 Now</a>
+          <a href="#book" class="btn-ghost-dark">Book Emergency Inspection</a>
+        </div>
+      </div>
+      <div class="storm-facts">
+        <div class="storm-fact"><div class="n">&lt; 60 sec</div><div class="t">Response Time to SMS</div></div>
+        <div class="storm-fact"><div class="n">24 hrs</div><div class="t">On-Site After a Storm</div></div>
+        <div class="storm-fact"><div class="n">Every Carrier</div><div class="t">Allstate · State Farm · Farmers · USAA</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TEAM ============================ -->
+<section id="team" class="alt">
+  <div class="wrap">
+    <span class="section-eyebrow">Meet The Team</span>
+    <h2 class="section-title">The crew that's on your roof. <span class="accent">Every time.</span></h2>
+    <p class="section-lede">Our promise never to subcontract only works because we actually know every person who steps onto your roof. Here are the operators running the show.</p>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo">
+          <div class="initials">S</div>
+          <div class="name-block"><h4>Saul</h4><div class="role">Founder · Lead Inspector</div></div>
+        </div>
+        <div class="bio">Started Roofboys in 2011 after a decade in DFW storm response. Still on-site for every inspection.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">
+          <div class="initials">D</div>
+          <div class="name-block"><h4>Daisy</h4><div class="role">Customer Relations Manager</div></div>
+        </div>
+        <div class="bio">The voice you'll hear when you call. Handles scheduling, quotes, insurance coordination, and post-install follow-up.</div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">
+          <div class="initials">M</div>
+          <div class="name-block"><h4>Marcus</h4><div class="role">Project Manager</div></div>
+        </div>
+        <div class="bio">Runs every install from scheduling to final inspection. If a crew is on your roof, Marcus is the one checking their work.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ REVIEWS ============================ -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="reviews-header">
+      <div>
+        <span class="section-eyebrow">Google Reviews</span>
+        <h2 class="section-title">Homeowners across DFW. <span class="accent">In their own words.</span></h2>
+      </div>
+      <div class="review-score">
+        <div class="big">4.9</div>
+        <div class="mid">
+          <div class="stars">★★★★★</div>
+          <div class="count">217 Google Reviews</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">"Saul showed up exactly when he said he would. The quote was in my inbox before I'd made lunch. No pressure, no upsell. The install was done in a day."</div>
+        <div class="who"><strong>Jennifer M.</strong>Plano, TX · Full Replacement</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">"Hail hit us in March. Roofboys was on my roof the next morning and walked my adjuster through every panel. Zero out-of-pocket."</div>
+        <div class="who"><strong>David R.</strong>Frisco, TX · Storm / Insurance</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="quote">"We interviewed four roofers. Roofboys was the only one who didn't subcontract and had real numbers on their warranty. Easy decision."</div>
+        <div class="who"><strong>Linda &amp; Ben S.</strong>Lewisville, TX · Residential</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="alt">
+  <div class="wrap">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <span class="section-eyebrow">Questions DFW Homeowners Ask</span>
+      <h2 class="section-title">Answers, <span class="accent">no marketing speak.</span></h2>
+    </div>
+
+    <div class="faq-wrap">
+      <details class="faq-item" open>
+        <summary>How long does a full roof replacement take?</summary>
+        <div class="a">Most DFW residential roofs are done in a single day. Larger or more complex homes (tile, multi-pitch, multi-story) may stretch into two. Our crews arrive between 6–7am and are gone by dusk.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you really do 22-minute inspections?</summary>
+        <div class="a">Yes. If we don't finish the inspection in 22 minutes, the inspection is free and we still send you the full report. We time it — and we publish our averages. Current: 19 min 40 sec.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work with my insurance company?</summary>
+        <div class="a">Every major carrier in Texas: Allstate, State Farm, Farmers, USAA, Liberty, Progressive, Nationwide, and most regional carriers. We'll meet your adjuster on-site and walk through every line of the scope.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Is financing available?</summary>
+        <div class="a">Yes. We offer 0% financing for qualified buyers through our partner lenders, plus extended payment plans up to 120 months. Ask during your quote.</div>
+      </details>
+      <details class="faq-item">
+        <summary>What happens if I have an issue after the install?</summary>
+        <div class="a">Call us. Our workmanship warranty is lifetime and transferable. If we installed it, we fix it — no paperwork fight, no "that's outside scope." That's the whole reason we don't subcontract.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Which DFW cities do you serve?</summary>
+        <div class="a">Dallas, Plano, Frisco, Allen, Denton, Irving, Garland, Rockwall, Arlington, Carrollton, Fort Worth, Lewisville, and The Colony. If you're near DFW and not on that list, call us — we can usually make it work.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FINAL CTA ============================ -->
+<section>
+  <div class="wrap">
+    <div class="final-cta">
+      <span class="section-eyebrow" style="color: var(--copper-light); display: block; margin-bottom: 18px;">Book Your Inspection</span>
+      <h2>Next available slot: <span class="accent">Thursday 2pm in Frisco.</span></h2>
+      <p>22 minutes. Full report. Same-day quote. No sales calls, no pressure, no subcontractors — ever.</p>
+      <div class="cta-row">
+        <a href="tel:9725952411" class="btn-primary">Call 972-595-2411</a>
+        <a href="#" class="btn-ghost-dark">Book Online</a>
+      </div>
+      <div class="meta">Response in under 60 seconds · 7 days a week · 24-hour storm response</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="brand-col">
+        <a href="#" class="logo" style="margin-bottom: 18px; display: inline-flex;">
+          <span class="brand-mark">ROOFBOYS</span>
+        </a>
+        <p>The DFW roofer homeowners pick when they don't want to gamble. In-house crews. 22-minute inspections. Lifetime workmanship. Since 2011.</p>
+        <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgba(245, 242, 236, 0.5); letter-spacing: 0.1em;">
+          HQ · LEWISVILLE, TX<br>
+          SERVING ALL OF DFW
+        </p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#">Residential Replacement</a></li>
+          <li><a href="#">Commercial Roofing</a></li>
+          <li><a href="#">Storm &amp; Hail Repair</a></li>
+          <li><a href="#">Gutters &amp; Maintenance</a></li>
+          <li><a href="#">Inspection &amp; Certification</a></li>
+          <li><a href="#">Insurance Claim Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Service Areas</h5>
+        <ul>
+          <li><a href="#">Dallas</a></li>
+          <li><a href="#">Plano</a></li>
+          <li><a href="#">Frisco</a></li>
+          <li><a href="#">Allen</a></li>
+          <li><a href="#">Denton</a></li>
+          <li><a href="#">Fort Worth</a></li>
+          <li><a href="#">All DFW cities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:9725952411">972-595-2411</a></li>
+          <li><a href="mailto:hello@roofboys.com">hello@roofboys.com</a></li>
+          <li style="padding-top: 10px;">Weekdays: 8am – 7pm</li>
+          <li>Weekends: 9am – 4pm</li>
+          <li>Storm: 24/7</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 ROOFBOYS ROOFING &amp; CONSTRUCTION · ALL RIGHTS RESERVED</div>
+      <div>LICENSED &amp; INSURED · TX ROOFING CONTRACTOR #XXXXX</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ STICKY EMERGENCY ============================ -->
+<div class="emergency-bar">
+  <div class="ico">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+  </div>
+  <div class="copy">
+    <strong>EMERGENCY SERVICE</strong>
+    Storm damage? We're on-call 24/7.
+  </div>
+  <a href="tel:9725952411" class="call-now">Call Now</a>
+</div>
+
+<!-- ============================ CHAT FAB ============================ -->
+<div class="chat-fab">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+</div>
+
+</body>
+</html>

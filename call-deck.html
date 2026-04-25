@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roofboys × Grwthly — Call Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --obsidian: #0A0A0B;
+    --slate: #14171C;
+    --slate-2: #1B1F25;
+    --graphite: #2A2F37;
+    --graphite-2: #1A1E24;
+    --bone: #F5F2EC;
+    --ink: #E8E6E1;
+    --ink-dim: #8A8A8F;
+    --copper: #E8442C;
+    --copper-light: #FF6F4C;
+    --copper-deep: #B92E1A;
+    --pulse: #7DF9C5;
+    --line: rgba(232, 230, 225, 0.08);
+    --line-strong: rgba(232, 230, 225, 0.14);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--obsidian);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-weight: 400;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  /* Typography */
+  .display { font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.035em; line-height: 0.92; }
+  .editorial { font-family: 'Fraunces', serif; font-weight: 500; letter-spacing: -0.015em; line-height: 1.1; font-variation-settings: "opsz" 144; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+
+  /* Slide shell */
+  .slide {
+    min-height: 100vh;
+    padding: 64px 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+  .slide.alt { background: var(--slate); }
+  .slide.bone { background: var(--bone); color: var(--obsidian); }
+
+  .slide .num-chip {
+    position: absolute;
+    top: 32px;
+    left: 96px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .slide .num-chip .c { color: var(--copper); font-weight: 600; }
+
+  /* Side nav */
+  .sidenav {
+    position: fixed;
+    top: 50%;
+    right: 32px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 100;
+  }
+  .sidenav a {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(232, 230, 225, 0.2);
+    transition: all 0.2s;
+    display: block;
+    position: relative;
+  }
+  .sidenav a:hover { background: var(--copper); transform: scale(1.3); }
+  .sidenav a.active { background: var(--copper); transform: scale(1.4); }
+  .sidenav a span {
+    position: absolute;
+    right: 20px; top: 50%;
+    transform: translateY(-50%);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .sidenav a:hover span { opacity: 1; }
+
+  /* Progress bar top */
+  .progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--line);
+    z-index: 100;
+  }
+  .progress-bar .fill {
+    height: 100%;
+    background: var(--copper);
+    width: 0%;
+    transition: width 0.1s;
+  }
+
+  /* Header + Footer persistent */
+  .brand-strip {
+    position: fixed;
+    top: 24px;
+    left: 96px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    z-index: 90;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-strip .g { color: var(--bone); font-weight: 700; letter-spacing: 0.3em; }
+  .brand-strip .x { color: var(--copper); font-weight: 700; }
+
+  /* =================== SLIDE 00 — COVER =================== */
+  .cover {
+    background:
+      radial-gradient(circle at 80% 30%, rgba(232, 68, 44, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(232, 68, 44, 0.06) 0%, transparent 40%),
+      var(--obsidian);
+    padding: 0 96px;
+  }
+  .cover-inner { max-width: 1100px; }
+  .cover .brand-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .cover .brand-line::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--copper) 0%, transparent 100%);
+    max-width: 280px;
+  }
+  .cover h1 {
+    font-size: 124px;
+    font-weight: 800;
+    letter-spacing: -0.045em;
+    line-height: 0.92;
+    margin-bottom: 32px;
+    color: var(--bone);
+  }
+  .cover h1 .accent { color: var(--copper); font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; font-variation-settings: "opsz" 144; }
+  .cover .sub {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--ink-dim);
+    max-width: 820px;
+    line-height: 1.35;
+    font-variation-settings: "opsz" 144;
+    margin-bottom: 64px;
+  }
+  .cover .meta-row {
+    display: flex;
+    gap: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line-strong);
+    max-width: 820px;
+  }
+  .cover .meta-row .item .l {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 8px;
+  }
+  .cover .meta-row .item .v {
+    font-size: 18px;
+    color: var(--bone);
+    font-weight: 600;
+  }
+
+  /* =================== GENERIC SLIDE HEADERS =================== */
+  .slide-header {
+    max-width: 1100px;
+    margin-bottom: 56px;
+  }
+  .slide-header .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .slide-header h2 {
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 0.98;
+    color: var(--bone);
+    margin-bottom: 20px;
+  }
+  .slide.bone .slide-header h2 { color: var(--obsidian); }
+  .slide-header h2 .accent { color: var(--copper); font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; font-variation-settings: "opsz" 144; }
+  .slide-header .sub {
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--ink-dim);
+    max-width: 780px;
+  }
+  .slide.bone .slide-header .sub { color: #555; }
+
+  /* =================== SLIDE: HONEST OPEN =================== */
+  .honest {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+    max-width: 1240px;
+  }
+  .honest .block {
+    padding: 32px 36px;
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    border-left: 3px solid var(--copper);
+  }
+  .honest .block .l {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .honest .block p {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--bone);
+    font-variation-settings: "opsz" 144;
+    font-weight: 400;
+  }
+  .honest .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* =================== OLD WAY vs NEW WAY =================== */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1240px;
+  }
+  .compare .col {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 48px 40px;
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+  }
+  .compare .col.old { background: rgba(40, 30, 30, 0.6); }
+  .compare .col.new { background: var(--slate-2); border-color: rgba(232, 68, 44, 0.3); box-shadow: 0 0 0 1px rgba(232, 68, 44, 0.15), 0 20px 60px rgba(232, 68, 44, 0.08); }
+  .compare .col-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .compare .col.old .col-label { color: var(--ink-dim); }
+  .compare .col.new .col-label { color: var(--copper); }
+  .compare .col h3 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    margin-bottom: 28px;
+  }
+  .compare .col.old h3 { color: rgba(232, 230, 225, 0.55); text-decoration: line-through; text-decoration-color: rgba(232, 68, 44, 0.3); text-decoration-thickness: 2px; }
+  .compare .col.new h3 { color: var(--bone); }
+  .compare .col ul { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .compare .col ul li {
+    font-size: 15px;
+    line-height: 1.55;
+    color: rgba(232, 230, 225, 0.65);
+    padding-left: 22px;
+    position: relative;
+  }
+  .compare .col.old ul li::before {
+    content: '×';
+    position: absolute; left: 0;
+    color: rgba(232, 68, 44, 0.5);
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .compare .col.new ul li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--copper);
+    font-weight: 700;
+  }
+
+  /* =================== STACK DIAGRAM =================== */
+  .stack-diagram {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    align-items: stretch;
+    margin-top: 40px;
+  }
+  .stack-node {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+  .stack-node.hot { border-color: rgba(232, 68, 44, 0.5); background: rgba(232, 68, 44, 0.06); }
+  .stack-node .step {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    font-weight: 700;
+  }
+  .stack-node h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bone);
+    letter-spacing: -0.015em;
+  }
+  .stack-node p {
+    font-size: 13px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+  }
+  .stack-node .tools {
+    margin-top: auto;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .stack-node .tools span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--ink-dim);
+    padding: 3px 8px;
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+  }
+  .stack-caption {
+    margin-top: 40px;
+    padding: 24px 28px;
+    background: rgba(232, 68, 44, 0.06);
+    border-left: 3px solid var(--copper);
+    border-radius: 4px;
+    max-width: 1200px;
+  }
+  .stack-caption p {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: var(--bone);
+    line-height: 1.45;
+    font-variation-settings: "opsz" 144;
+  }
+
+  /* =================== LEAKS GRID =================== */
+  .leaks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 1240px;
+  }
+  .leak {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--copper);
+    border-radius: 8px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-height: 300px;
+  }
+  .leak .n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    font-weight: 600;
+  }
+  .leak h4 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--bone);
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+  }
+  .leak .amount {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--copper);
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-top: auto;
+  }
+  .leak .period {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .leaks-total {
+    margin-top: 40px;
+    padding: 32px 40px;
+    background: linear-gradient(135deg, var(--slate-2) 0%, rgba(232, 68, 44, 0.1) 100%);
+    border: 1px solid rgba(232, 68, 44, 0.3);
+    border-radius: 10px;
+    max-width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .leaks-total .l {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--copper);
+    font-weight: 700;
+  }
+  .leaks-total .v {
+    font-size: 72px;
+    font-weight: 800;
+    color: var(--copper);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .leaks-total .v small { color: var(--bone); font-size: 30px; font-weight: 500; }
+  .leaks-total .note {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    color: var(--ink-dim);
+    font-style: italic;
+    max-width: 380px;
+    line-height: 1.4;
+  }
+
+  /* =================== DELIVERABLES GRID =================== */
+  .deliverables {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1240px;
+  }
+  .deliv-card {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 32px 32px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 24px;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+  }
+  .deliv-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--copper);
+  }
+  .deliv-card .deliv-num {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--copper);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .deliv-card .status {
+    position: absolute;
+    top: 24px; right: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--pulse);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+  }
+  .deliv-card .status::before {
+    content: ''; width: 6px; height: 6px;
+    background: var(--pulse); border-radius: 50%;
+    box-shadow: 0 0 8px var(--pulse);
+  }
+  .deliv-card .type {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 8px;
+  }
+  .deliv-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--bone);
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+    line-height: 1.15;
+  }
+  .deliv-card p {
+    font-size: 14.5px;
+    color: var(--ink-dim);
+    line-height: 1.6;
+    margin-bottom: 14px;
+  }
+  .deliv-card .pay {
+    font-family: 'Fraunces', serif;
+    font-size: 15px;
+    font-style: italic;
+    color: var(--copper-light);
+    font-variation-settings: "opsz" 144;
+    line-height: 1.4;
+  }
+
+  /* =================== 90 DAY TIMELINE =================== */
+  .timeline {
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    right: 5%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--copper) 0%, rgba(232, 68, 44, 0.3) 100%);
+  }
+  .phase {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 40px 32px 32px;
+    position: relative;
+    text-align: left;
+  }
+  .phase .dot {
+    position: absolute;
+    top: -8px; left: 32px;
+    width: 16px; height: 16px;
+    background: var(--copper);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--obsidian), 0 0 20px rgba(232, 68, 44, 0.6);
+  }
+  .phase .phase-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .phase h4 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--bone);
+    margin-bottom: 16px;
+  }
+  .phase ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .phase ul li {
+    font-size: 14.5px;
+    color: var(--ink-dim);
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .phase ul li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--copper);
+    font-weight: 700;
+  }
+
+  /* =================== OUTCOMES =================== */
+  .outcomes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 1240px;
+  }
+  .outcome {
+    background: var(--slate-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .outcome .big {
+    font-size: 54px;
+    font-weight: 800;
+    color: var(--copper);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .outcome .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .outcome .desc {
+    font-size: 14.5px;
+    color: var(--bone);
+    line-height: 1.5;
+  }
+
+  /* =================== MANIFESTO =================== */
+  .manifesto {
+    max-width: 1100px;
+  }
+  .manifesto .opener {
+    font-family: 'Fraunces', serif;
+    font-size: 88px;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    color: var(--bone);
+    margin-bottom: 48px;
+    font-variation-settings: "opsz" 144;
+  }
+  .manifesto .opener .accent { color: var(--copper); }
+  .manifesto .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding-top: 48px;
+    border-top: 1px solid var(--line-strong);
+  }
+  .manifesto .grid h5 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 14px;
+    font-weight: 700;
+  }
+  .manifesto .grid p {
+    font-size: 16px;
+    color: var(--ink-dim);
+    line-height: 1.55;
+  }
+
+  /* =================== ASK SLIDE =================== */
+  .ask-wrap {
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .ask-wrap .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+  .ask-wrap h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 88px;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+    color: var(--bone);
+    font-variation-settings: "opsz" 144;
+    margin-bottom: 24px;
+  }
+  .ask-wrap h2 .accent { color: var(--copper); font-style: italic; }
+  .ask-wrap .offer-line {
+    font-size: 22px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+    margin-bottom: 48px;
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ask-box {
+    background: linear-gradient(135deg, var(--slate-2) 0%, rgba(232, 68, 44, 0.08) 100%);
+    border: 1px solid rgba(232, 68, 44, 0.3);
+    border-radius: 12px;
+    padding: 48px 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    text-align: left;
+    align-items: center;
+  }
+  .ask-box .pricing .l {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .ask-box .pricing .v {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--bone);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 14px;
+  }
+  .ask-box .pricing .v small { font-size: 18px; color: var(--ink-dim); font-weight: 400; }
+  .ask-box .pricing .sub {
+    font-size: 14.5px;
+    color: var(--ink-dim);
+    line-height: 1.5;
+  }
+  .ask-box .deliv-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+  .ask-box .deliv-list li {
+    font-size: 15px;
+    color: var(--bone);
+    padding-left: 24px;
+    position: relative;
+  }
+  .ask-box .deliv-list li::before {
+    content: '✓';
+    position: absolute; left: 0;
+    color: var(--copper);
+    font-weight: 700;
+  }
+  .cta-row {
+    margin-top: 48px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+  .btn {
+    padding: 18px 32px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    letter-spacing: -0.005em;
+    font-family: 'Inter', sans-serif;
+  }
+  .btn-p { background: var(--copper); color: var(--bone); }
+  .btn-p:hover { background: var(--copper-deep); }
+  .btn-s { background: transparent; color: var(--bone); border: 1.5px solid var(--line-strong); }
+  .btn-s:hover { border-color: var(--bone); }
+
+  /* =================== KEYBOARD HINT =================== */
+  .kb-hint {
+    position: fixed;
+    bottom: 24px;
+    left: 96px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    z-index: 90;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .kb-hint kbd {
+    background: var(--slate-2);
+    border: 1px solid var(--line-strong);
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--bone);
+  }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .slide { padding: 80px 40px; }
+    .cover { padding: 0 40px; }
+    .cover h1 { font-size: 72px; }
+    .slide-header h2 { font-size: 44px; }
+    .stack-diagram,
+    .leaks-grid,
+    .timeline,
+    .outcomes,
+    .deliverables,
+    .manifesto .grid,
+    .compare,
+    .ask-box { grid-template-columns: 1fr; }
+    .leaks-total { flex-direction: column; text-align: left; align-items: flex-start; }
+    .brand-strip, .kb-hint, .sidenav { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- PROGRESS BAR -->
+<div class="progress-bar"><div class="fill" id="progressFill"></div></div>
+
+<!-- BRAND STRIP -->
+<div class="brand-strip">
+  <span class="g">GRWTHLY</span>
+  <span class="x">×</span>
+  <span>ROOFBOYS · CALL DECK · APRIL 2026</span>
+</div>
+
+<!-- SIDE NAV -->
+<div class="sidenav">
+  <a href="#s0" class="nav-dot" data-label="Open"><span>Open</span></a>
+  <a href="#s1" class="nav-dot" data-label="Honest"><span>Where we stand</span></a>
+  <a href="#s2" class="nav-dot" data-label="Then vs Now"><span>Then vs. Now</span></a>
+  <a href="#s3" class="nav-dot" data-label="Stack"><span>The New Stack</span></a>
+  <a href="#s4" class="nav-dot" data-label="Leaks"><span>Revenue Leaks</span></a>
+  <a href="#s5" class="nav-dot" data-label="Deliverables"><span>What I Built You</span></a>
+  <a href="#s6" class="nav-dot" data-label="90 days"><span>90-Day Path</span></a>
+  <a href="#s7" class="nav-dot" data-label="Outcomes"><span>Outcomes</span></a>
+  <a href="#s8" class="nav-dot" data-label="Manifesto"><span>Why This Works</span></a>
+  <a href="#s9" class="nav-dot" data-label="Ask"><span>Next Step</span></a>
+</div>
+
+<!-- KB HINT -->
+<div class="kb-hint">
+  <kbd>↑</kbd><kbd>↓</kbd> NAVIGATE
+  <span>·</span>
+  <kbd>SPACE</kbd> NEXT
+</div>
+
+<!-- ============================ SLIDE 0 — COVER ============================ -->
+<section class="slide cover" id="s0">
+  <div class="cover-inner">
+    <div class="brand-line">GRWTHLY × ROOFBOYS</div>
+    <h1>What's <span class="accent">different</span> this time.</h1>
+    <div class="sub">A new stack, better deliverables, and an operator-level engine — built to catch every lead Roofboys has already paid for but never heard from.</div>
+    <div class="meta-row">
+      <div class="item">
+        <div class="l">Prepared For</div>
+        <div class="v">Roofboys Roofing &amp; Construction</div>
+      </div>
+      <div class="item">
+        <div class="l">Prepared By</div>
+        <div class="v">Martin Guzman · Grwthly</div>
+      </div>
+      <div class="item">
+        <div class="l">Date</div>
+        <div class="v">April 24, 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 1 — HONEST OPEN ============================ -->
+<section class="slide" id="s1">
+  <div class="num-chip"><span class="c">01</span> · Where We Stand</div>
+  <div class="slide-header">
+    <div class="eyebrow">Before I pitch anything</div>
+    <h2>I want to be <span class="accent">honest</span> about what worked and what didn't.</h2>
+    <p class="sub">Last engagement delivered some wins and some misses. I've spent the last year rebuilding around those misses — different stack, different deliverables, different way of thinking about multi-location roofing.</p>
+  </div>
+  <div class="honest">
+    <div class="stack">
+      <div class="block">
+        <div class="l">What didn't work last time</div>
+        <p>The infrastructure couldn't catch what we generated. Leads went cold after hours. Content wasn't distributed. Your database wasn't mined. Not a marketing failure — an infrastructure gap.</p>
+      </div>
+      <div class="block">
+        <div class="l">What's fixed in the new stack</div>
+        <p>Claude runs intake in under 60 seconds. GHL catches everything. Reviews, referrals, and reactivation fire automatically. Weekly reporting replaces monthly decks.</p>
+      </div>
+    </div>
+    <div class="block" style="border-left-color: var(--pulse);">
+      <div class="l" style="color: var(--pulse);">The ask</div>
+      <p>Give me 10 days. One fixed-fee diagnostic. You walk out with the numbers, the roadmap, and the blueprint — whether you engage further or not.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 2 — THEN vs NOW ============================ -->
+<section class="slide alt" id="s2">
+  <div class="num-chip"><span class="c">02</span> · Then vs. Now</div>
+  <div class="slide-header">
+    <div class="eyebrow">The stack has evolved</div>
+    <h2>Same operator. <span class="accent">Entirely new machine.</span></h2>
+    <p class="sub">The biggest change in the last twelve months: GoHighLevel plus Claude AI crossed the threshold where intake, follow-up, and content distribution can be fully automated at a quality that outperforms human SDRs. Every deliverable below reflects that shift.</p>
+  </div>
+  <div class="compare">
+    <div class="col old">
+      <div class="col-label">Last Time</div>
+      <h3>Agency-style delivery</h3>
+      <ul>
+        <li>Form lead → email notification → call when I could</li>
+        <li>After-hours leads went cold by morning</li>
+        <li>Blog posts published ad-hoc, one piece, one channel</li>
+        <li>Monthly reports in a slide deck</li>
+        <li>Reviews requested manually, when I remembered</li>
+        <li>Database of past customers sitting idle</li>
+        <li>One generic service-area page</li>
+        <li>Ad spend as the primary growth lever</li>
+        <li>Hours billed, not outcomes delivered</li>
+      </ul>
+    </div>
+    <div class="col new">
+      <div class="col-label">This Time</div>
+      <h3>Operator-level engine</h3>
+      <ul>
+        <li>Form lead → Claude qualifies in 60 sec → auto-books inspection</li>
+        <li>24/7 AI intake — zero after-hours leaks</li>
+        <li>One blog → six distributed pieces via Claude automation</li>
+        <li>Weekly reporting dashboard, live, emailed automatically</li>
+        <li>Review engine fires 24 hours post-install, every install</li>
+        <li>Five-touch annual reactivation across all past customers</li>
+        <li>Twelve city pages with local schema, ranking separately</li>
+        <li>Infrastructure compounds whether ad spend is $0 or $10K</li>
+        <li>Outcomes billed — speed-to-lead, show rate, review velocity</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 3 — THE NEW STACK ============================ -->
+<section class="slide" id="s3">
+  <div class="num-chip"><span class="c">03</span> · The New Stack</div>
+  <div class="slide-header">
+    <div class="eyebrow">How a lead actually flows now</div>
+    <h2>Every lead. <span class="accent">Every time.</span> Under 60 seconds.</h2>
+    <p class="sub">This is the full path a DFW homeowner travels from first touch to booked inspection — with every automation layer running 24/7, weekends included, storm season included.</p>
+  </div>
+  <div class="stack-diagram">
+    <div class="stack-node">
+      <div class="step">Step 01</div>
+      <h4>Inbound Signal</h4>
+      <p>Lead arrives — web form, chat, missed call, SMS, storm trigger, or retargeting click.</p>
+      <div class="tools"><span>WEB</span><span>SMS</span><span>CALL</span></div>
+    </div>
+    <div class="stack-node hot">
+      <div class="step">Step 02</div>
+      <h4>Claude Qualifies</h4>
+      <p>AI agent answers in under 60 seconds. Captures address, roof age, damage, insurance, timeline.</p>
+      <div class="tools"><span>CLAUDE</span><span>GHL</span></div>
+    </div>
+    <div class="stack-node hot">
+      <div class="step">Step 03</div>
+      <h4>Books Inspection</h4>
+      <p>Writes the appointment directly into the crew calendar. Sends confirmation SMS + email.</p>
+      <div class="tools"><span>GHL</span><span>CALENDAR</span></div>
+    </div>
+    <div class="stack-node">
+      <div class="step">Step 04</div>
+      <h4>Automated Follow-Up</h4>
+      <p>Reminder sequences, reschedule logic, quote follow-up, review request — all automatic.</p>
+      <div class="tools"><span>GHL</span><span>TWILIO</span></div>
+    </div>
+    <div class="stack-node">
+      <div class="step">Step 05</div>
+      <h4>Reporting</h4>
+      <p>Weekly dashboard to the owner. Speed-to-lead, booked inspections, close rate, reactivation revenue.</p>
+      <div class="tools"><span>GHL</span><span>LIVE</span></div>
+    </div>
+  </div>
+  <div class="stack-caption">
+    <p>"The old stack relied on me answering the phone. The new stack doesn't care if I'm awake."</p>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 4 — REVENUE LEAKS ============================ -->
+<section class="slide alt" id="s4">
+  <div class="num-chip"><span class="c">04</span> · Revenue Leaks</div>
+  <div class="slide-header">
+    <div class="eyebrow">What the diagnostic found</div>
+    <h2>Four leaks. <span class="accent">Quantified.</span> Costing you this — right now.</h2>
+    <p class="sub">These aren't theoretical. Every one maps to a specific piece of your current infrastructure. Every one is fixable inside 90 days.</p>
+  </div>
+  <div class="leaks-grid">
+    <div class="leak">
+      <div class="n">Leak 01</div>
+      <h4>Speed to Lead</h4>
+      <p style="color: var(--ink-dim); font-size: 13px; line-height: 1.5;">No auto-reply, no chatbot, no text-back. After-hours leads go dark until 8am.</p>
+      <div>
+        <div class="amount">$40–90K</div>
+        <div class="period">Per Month</div>
+      </div>
+    </div>
+    <div class="leak">
+      <div class="n">Leak 02</div>
+      <h4>The Site Doesn't Close</h4>
+      <p style="color: var(--ink-dim); font-size: 13px; line-height: 1.5;">Zero reviews above the fold, no manufacturer badges, generic hero copy.</p>
+      <div>
+        <div class="amount">15–25%</div>
+        <div class="period">Conversion Drag</div>
+      </div>
+    </div>
+    <div class="leak">
+      <div class="n">Leak 03</div>
+      <h4>The Database Is Dark</h4>
+      <p style="color: var(--ink-dim); font-size: 13px; line-height: 1.5;">2,000+ past customers. Zero reactivation, referral asks, or anniversary touches.</p>
+      <div>
+        <div class="amount">$100–400K</div>
+        <div class="period">Per Year</div>
+      </div>
+    </div>
+    <div class="leak">
+      <div class="n">Leak 04</div>
+      <h4>No Storm System</h4>
+      <p style="color: var(--ink-dim); font-size: 13px; line-height: 1.5;">4–7 hail events per year in DFW. No pre-built funnel, no NOAA triggers, no campaigns.</p>
+      <div>
+        <div class="amount">$150–500K</div>
+        <div class="period">Per Event</div>
+      </div>
+    </div>
+  </div>
+  <div class="leaks-total">
+    <div>
+      <div class="l">Total Revenue At Risk · Annual</div>
+      <div class="v">$1.2M <small>to</small> $2.6M</div>
+    </div>
+    <div class="note">"This is not a marketing spend problem. It is an infrastructure problem. Roofboys does the work of a $5M+ business with the systems of a $500K one."</div>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 5 — DELIVERABLES ============================ -->
+<section class="slide" id="s5">
+  <div class="num-chip"><span class="c">05</span> · What I Already Built You</div>
+  <div class="slide-header">
+    <div class="eyebrow">Proof before the pitch</div>
+    <h2>Four deliverables. <span class="accent">Already in your folder.</span></h2>
+    <p class="sub">I don't ship promises anymore. I ship proof. Every item below is already produced and ready for your review — at no cost, no commitment, regardless of what you decide today.</p>
+  </div>
+  <div class="deliverables">
+    <div class="deliv-card">
+      <div class="deliv-num">01</div>
+      <div>
+        <div class="status">Ready</div>
+        <div class="type">Strategic · 11 Pages · PDF</div>
+        <h4>Opportunity Brief</h4>
+        <p>Full revenue-leak audit of Roofboys. Four leaks quantified, dollar amounts named, revenue-at-risk spread across one page. Premium client-facing document in the Grwthly operator voice.</p>
+        <div class="pay">What it replaces: the 40-slide "marketing audit" deck nobody reads.</div>
+      </div>
+    </div>
+    <div class="deliv-card">
+      <div class="deliv-num">02</div>
+      <div>
+        <div class="status">Ready</div>
+        <div class="type">Tactical · 90-Day Plan · MD</div>
+        <h4>Content Marketing Plan</h4>
+        <p>Five content pillars mapped to Location Growth Engine layers. Twelve-week editorial calendar with specific article titles. One-blog-to-six-pieces distribution cascade via Claude automation.</p>
+        <div class="pay">What it replaces: "we'll post some blogs" — with a system that compounds.</div>
+      </div>
+    </div>
+    <div class="deliv-card">
+      <div class="deliv-num">03</div>
+      <div>
+        <div class="status">Ready</div>
+        <div class="type">Visual · Interactive · HTML</div>
+        <h4>Brand Identity Preview</h4>
+        <p>Proposed palette, typography system, and before/after homepage comparison. Your logo untouched — the system around it upgraded. Six headline rewrites and a nine-element trust stack.</p>
+        <div class="pay">What it replaces: a generic "we'll make it look better" promise with a proof-of-concept.</div>
+      </div>
+    </div>
+    <div class="deliv-card">
+      <div class="deliv-num">04</div>
+      <div>
+        <div class="status">Ready</div>
+        <div class="type">Functional · HTML · Deploy-Ready</div>
+        <h4>Homepage v2 (Clean Build)</h4>
+        <p>Full operator-level homepage — hero with $100 guarantee, live review bar, manufacturer badges, storm response block, team section, reviews, FAQ, and sticky emergency bar. Self-contained, responsive, deployable today.</p>
+        <div class="pay">What it replaces: another round of mockup-by-committee that never ships.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 6 — 90 DAY TIMELINE ============================ -->
+<section class="slide alt" id="s6">
+  <div class="num-chip"><span class="c">06</span> · 90-Day Path</div>
+  <div class="slide-header">
+    <div class="eyebrow">If we move forward</div>
+    <h2>From signature to <span class="accent">compounding</span> in 90 days.</h2>
+    <p class="sub">Three phases. Each with a specific deliverable, a specific outcome, and a specific way of measuring whether the system is working. No month-long silence between updates.</p>
+  </div>
+  <div class="timeline">
+    <div class="phase">
+      <div class="dot"></div>
+      <div class="phase-label">Days 1–30 · Foundation</div>
+      <h4>Stop the bleed</h4>
+      <ul>
+        <li>GHL account built, 2,000+ contacts imported and tagged</li>
+        <li>Claude intake agent live, 60-second response SLA active</li>
+        <li>Missed-call text-back fires immediately</li>
+        <li>Review engine firing 24 hours post-install</li>
+        <li>Typos, copyright, social links fixed</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="dot"></div>
+      <div class="phase-label">Days 31–60 · Conversion</div>
+      <h4>Move the close rate</h4>
+      <ul>
+        <li>12 city landing pages deployed with local schema</li>
+        <li>Retargeting on Meta + Google, every bounce captured</li>
+        <li>Referral engine live, $200 tracked incentive</li>
+        <li>First reactivation wave hits the 2,000-customer list</li>
+        <li>First A/B test on hero copy</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <div class="dot"></div>
+      <div class="phase-label">Days 61–90 · Compounding</div>
+      <h4>Every job feeds the engine</h4>
+      <ul>
+        <li>Storm-response funnel battle-tested against first hail event</li>
+        <li>Commercial pipeline separated with its own cadence</li>
+        <li>Weekly reporting dashboard dialed in</li>
+        <li>Full 5-touch annual reactivation loop running</li>
+        <li>Every install → review + referral + reactivation trigger</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 7 — OUTCOMES ============================ -->
+<section class="slide" id="s7">
+  <div class="num-chip"><span class="c">07</span> · Expected Outcomes</div>
+  <div class="slide-header">
+    <div class="eyebrow">By day 90</div>
+    <h2>Not promises. <span class="accent">Measured outputs.</span></h2>
+    <p class="sub">Every outcome below is tied to a specific piece of infrastructure we build. If the infrastructure ships, the outcome follows. We measure it weekly in your dashboard.</p>
+  </div>
+  <div class="outcomes">
+    <div class="outcome">
+      <div class="big">&lt; 60s</div>
+      <div class="label">Speed to Lead</div>
+      <div class="desc">From inbound signal to first contact. 7 days a week, 24 hours a day.</div>
+    </div>
+    <div class="outcome">
+      <div class="big">20–35%</div>
+      <div class="label">Booked Inspection Lift</div>
+      <div class="desc">Same inbound volume, more booked appointments — just by catching what already exists.</div>
+    </div>
+    <div class="outcome">
+      <div class="big">15–25%</div>
+      <div class="label">Close Rate Lift</div>
+      <div class="desc">From conversion rebuild — hero copy, trust stack, reviews, operator promise on page.</div>
+    </div>
+    <div class="outcome">
+      <div class="big">150–250</div>
+      <div class="label">New Google Reviews</div>
+      <div class="desc">Review engine fires every install. GBP rank compounds. Paid CPL drops.</div>
+    </div>
+    <div class="outcome">
+      <div class="big">5–15</div>
+      <div class="label">Reactivated Jobs</div>
+      <div class="desc">From the 2,000-customer historical database. Revenue you already earned the right to.</div>
+    </div>
+    <div class="outcome">
+      <div class="big">$0 / $10K</div>
+      <div class="label">Runs Either Way</div>
+      <div class="desc">The engine compounds whether ad spend is zero or ten thousand a month.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 8 — MANIFESTO ============================ -->
+<section class="slide alt" id="s8">
+  <div class="num-chip"><span class="c">08</span> · Why This Works</div>
+  <div class="manifesto">
+    <div class="opener">Grwthly isn't a marketing agency. It's the <span class="accent">growth operator</span> that builds the infrastructure.</div>
+    <div class="grid">
+      <div>
+        <h5>No Ad Spend Markup</h5>
+        <p>We don't run ads for a percentage. If you want ads, we build the funnel — you write the check directly to Meta and Google. Our fees are fixed.</p>
+      </div>
+      <div>
+        <h5>Built on GHL + Claude</h5>
+        <p>The infrastructure layer compounds. It works in slow months. It works in storm months. It survives crew turnover. It survives ad account bans.</p>
+      </div>
+      <div>
+        <h5>Outcome, Not Hours</h5>
+        <p>Speed-to-lead, show rate, review velocity, reactivation revenue. We measure what matters, weekly, in your dashboard. No slide decks.</p>
+      </div>
+      <div>
+        <h5>Operator-Level Voice</h5>
+        <p>No hype. No bro-marketing. No buzzwords. The deliverables read like a post-incident review, not a sales pitch. You'll notice the difference immediately.</p>
+      </div>
+      <div>
+        <h5>Your Logo Stays</h5>
+        <p>We don't rebrand. We redesign the system around the mark that already carries equity. Cheaper for you, less friction, more impact.</p>
+      </div>
+      <div>
+        <h5>10-Day Risk Reversal</h5>
+        <p>The Location Diagnostic is fixed-fee, 10 days, credits 100% against the full build. If the numbers don't support moving forward, you walk with the roadmap.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SLIDE 9 — THE ASK ============================ -->
+<section class="slide" id="s9">
+  <div class="num-chip"><span class="c">09</span> · The Next Step</div>
+  <div class="ask-wrap">
+    <div class="tag">The Ask</div>
+    <h2>Book <span class="accent">The Location Diagnostic™.</span></h2>
+    <p class="offer-line">Ten days. Fixed fee. Fully credited against the build. At the end of it, you own a revenue-leak audit, a 90-day roadmap, the GHL + Claude blueprint, and a Loom walkthrough — whether you engage further or not.</p>
+
+    <div class="ask-box">
+      <div class="pricing">
+        <div class="l">The Location Diagnostic™</div>
+        <div class="v">$2,500 <small>/ 10 days</small></div>
+        <div class="sub">Past-client rate. 25% off standard. Credits 100% against the Location Growth Engine™ build.</div>
+      </div>
+      <ul class="deliv-list">
+        <li>Full revenue-leak audit, quantified by channel and stage</li>
+        <li>90-day prioritized roadmap with owners and deadlines</li>
+        <li>GHL + Claude system blueprint (workflows, pipelines, agents)</li>
+        <li>Loom walkthrough for your operations team</li>
+        <li>100% credit against the full build if you move forward</li>
+      </ul>
+    </div>
+
+    <div class="cta-row">
+      <a href="tel:9725952411" class="btn btn-p">Book the Diagnostic</a>
+      <a href="#s0" class="btn btn-s">Start Over from the Top</a>
+    </div>
+
+    <div style="margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line-strong); max-width: 780px; margin-left: auto; margin-right: auto;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--copper); margin-bottom: 14px; font-weight: 600;">Martin Guzman · Grwthly</div>
+      <div style="font-size: 15px; color: var(--ink-dim);">Mguzman423@yahoo.com · Growth Operator for Multi-Location Service Brands</div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Progress bar
+  const fill = document.getElementById('progressFill');
+  document.body.addEventListener('scroll', () => {
+    const top = document.body.scrollTop;
+    const height = document.body.scrollHeight - document.body.clientHeight;
+    fill.style.width = (top / height * 100) + '%';
+  });
+
+  // Side nav active state (based on current slide in view)
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.sidenav a');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const id = '#' + e.target.id;
+        dots.forEach(d => d.classList.toggle('active', d.getAttribute('href') === id));
+      }
+    });
+  }, { threshold: 0.5, root: document.body });
+  slides.forEach(s => observer.observe(s));
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    const order = Array.from(slides);
+    const currentIndex = order.findIndex(s => {
+      const r = s.getBoundingClientRect();
+      return r.top >= -100 && r.top < window.innerHeight * 0.5;
+    });
+    if (e.key === 'ArrowDown' || e.key === ' ' || e.key === 'ArrowRight' || e.key === 'PageDown') {
+      e.preventDefault();
+      const next = order[Math.min(currentIndex + 1, order.length - 1)];
+      next?.scrollIntoView({ behavior: 'smooth' });
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp') {
+      e.preventDefault();
+      const prev = order[Math.max(currentIndex - 1, 0)];
+      prev?.scrollIntoView({ behavior: 'smooth' });
+    } else if (e.key === 'Home') {
+      e.preventDefault();
+      order[0].scrollIntoView({ behavior: 'smooth' });
+    } else if (e.key === 'End') {
+      e.preventDefault();
+      order[order.length - 1].scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
+
+</body>
+</html>
